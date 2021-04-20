@@ -1,0 +1,228 @@
+# Chaos mod contorl events
+
+namespace = cm_control_events
+
+# Start up event
+country_event = {
+	id = cm_control_events.1
+	title = "cm_control_events.1.t"
+	desc = "cm_control_events.1.d"
+	picture = 4_Rajput_Estate_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = { has_global_flag = cm_start_event }
+	}
+
+	immediate = {
+		clr_global_flag = cm_frequency_one_month
+		clr_global_flag = cm_frequency_three_months
+		clr_global_flag = cm_frequency_six_months
+		clr_global_flag = cm_frequency_one_year
+		set_global_flag = cm_start_event
+	}
+
+	after = {
+		country_event = {
+			id = cm_control_events.100
+		}
+	}
+
+	option = { # 1 month
+		name = "cm_control_events.1.a"
+		set_global_flag = cm_frequency_one_month
+		set_variable = {
+			which = cm_event_frequency
+			value = 30
+		}
+	}
+	option = { # 3 month
+		name = "cm_control_events.1.a"
+		set_global_flag = cm_frequency_three_months
+		set_variable = {
+			which = cm_event_frequency
+			value = 90
+		}
+	}
+	option = { # 6 month
+		name = "cm_control_events.1.a"
+		set_global_flag = cm_frequency_six_months
+		set_variable = {
+			which = cm_event_frequency
+			value = 180
+		}
+	}
+	option = { # 1 year
+		name = "cm_control_events.1.a"
+		set_global_flag = cm_frequency_one_year
+		set_variable = {
+			which = cm_event_frequency
+			value = 360
+		}
+	}
+}
+
+# main settings page
+country_event = {
+	id = cm_control_events.2
+	title = "cm_control_events.2.t"
+	desc = "cm_control_events.2.d"
+
+	is_triggered_only = yes
+
+	option = { # set frequency
+		name = "cm_control_events.2.a"
+		country_event = {
+			id = cm_control_events.1
+		}
+	}
+	option = { # set bad effect duration
+		name = "cm_control_events.2.b"
+		country_event = {
+			id = cm_control_events.3
+		}
+	}
+	option = { # set bad effect duration
+		name = "cm_control_events.2.c"
+		country_event = {
+			id = cm_control_events.4
+		}
+	}
+}
+
+# bad effect duration
+country_event = {
+	id = cm_control_events.3
+	title = "cm_control_events.3.t"
+	desc = "cm_control_events.3.d"
+
+	is_triggered_only = yes
+
+	option = { # short
+		name = "cm_control_events.3.a"
+		clr_global_flag = cm_bad_effect_duration_medium
+		clr_global_flag = cm_bad_effect_duration_short
+		clr_global_flag = cm_bad_effect_duration_long
+		clr_global_flag = cm_bad_effect_duration_insane
+		set_global_flag = cm_bad_effect_duration_short
+	}
+	option = { # short
+		name = "cm_control_events.3.b"
+		clr_global_flag = cm_bad_effect_duration_medium
+		clr_global_flag = cm_bad_effect_duration_short
+		clr_global_flag = cm_bad_effect_duration_long
+		clr_global_flag = cm_bad_effect_duration_insane
+		set_global_flag = cm_bad_effect_duration_medium
+	}
+	option = { # short
+		name = "cm_control_events.3.c"
+		clr_global_flag = cm_bad_effect_duration_medium
+		clr_global_flag = cm_bad_effect_duration_short
+		clr_global_flag = cm_bad_effect_duration_long
+		clr_global_flag = cm_bad_effect_duration_insane
+		set_global_flag = cm_bad_effect_duration_long
+	}
+	option = { # short
+		name = "cm_control_events.3.e"
+		clr_global_flag = cm_bad_effect_duration_medium
+		clr_global_flag = cm_bad_effect_duration_short
+		clr_global_flag = cm_bad_effect_duration_long
+		clr_global_flag = cm_bad_effect_duration_insane
+		set_global_flag = cm_bad_effect_duration_insane
+	}
+}
+
+# good effect duration
+country_event = {
+	id = cm_control_events.4
+	title = "cm_control_events.4.t"
+	desc = "cm_control_events.4.d"
+
+	is_triggered_only = yes
+
+	option = { # short
+		name = "cm_control_events.4.a"
+		clr_global_flag = cm_good_effect_duration_medium
+		clr_global_flag = cm_good_effect_duration_short
+		clr_global_flag = cm_good_effect_duration_long
+		clr_global_flag = cm_good_effect_duration_insane
+		set_global_flag = cm_good_effect_duration_short
+	}
+	option = { # short
+		name = "cm_control_events.4.b"
+		clr_global_flag = cm_good_effect_duration_medium
+		clr_global_flag = cm_good_effect_duration_short
+		clr_global_flag = cm_good_effect_duration_long
+		clr_global_flag = cm_good_effect_duration_insane
+		set_global_flag = cm_good_effect_duration_medium
+	}
+	option = { # short
+		name = "cm_control_events.4.c"
+		clr_global_flag = cm_good_effect_duration_medium
+		clr_global_flag = cm_good_effect_duration_short
+		clr_global_flag = cm_good_effect_duration_long
+		clr_global_flag = cm_good_effect_duration_insane
+		set_global_flag = cm_good_effect_duration_long
+	}
+	option = { # short
+		name = "cm_control_events.4.e"
+		clr_global_flag = cm_good_effect_duration_medium
+		clr_global_flag = cm_good_effect_duration_short
+		clr_global_flag = cm_good_effect_duration_long
+		clr_global_flag = cm_good_effect_duration_insane
+		set_global_flag = cm_good_effect_duration_insane
+	}
+}
+
+country_event = {
+	id = cm_control_events.100
+	title = "cm_control_events.100.t"
+	desc = "cm_control_events.100.d"
+
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_global_flag = cm_frequency_one_month
+			}
+			country_event = {
+				id = cm_control_events.100
+				days = 30
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = cm_frequency_three_months
+			}
+			country_event = {
+				id = cm_control_events.100
+				days = 90
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = cm_frequency_six_months
+			}
+			country_event = {
+				id = cm_control_events.100
+				days = 180
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = cm_frequency_one_year
+			}
+			country_event = {
+				id = cm_control_events.100
+				days = 360
+			}
+		}
+		cm_choas_main_function = yes
+	}
+
+	option = { # okay?
+		name = "cm_control_events.100.a"
+	}
+}

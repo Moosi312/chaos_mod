@@ -1,0 +1,15 @@
+
+cm_choas_main_function = {
+	random_list = {
+		1 = {
+			country_event = {
+				id = cm_gov_events.1
+			}
+		}
+		1 = {
+			country_event = {
+				id = cm_gov_events.2
+			}
+		}
+	}
+}
