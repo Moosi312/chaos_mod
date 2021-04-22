@@ -1,0 +1,76 @@
+country_decisions = {
+
+	cm_settings = {
+		major = yes
+		potential = {
+			ai = no
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			country_event = {
+				id = cm_control_events.2
+			}
+		}
+	}
+
+	cm_stop_events = {
+		major = yes
+		potential = {
+			has_country_flag = cm_events_running
+			ai = no
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			clr_country_flag = cm_events_running
+		}
+	}
+
+	cm_restart_events = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = cm_events_running }
+			NOT = { has_country_flag = cm_stopped }
+			has_global_flag = cm_start_event
+			ai = no
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			set_country_flag = cm_events_running
+		}
+	}
+
+	cm_start_events = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = cm_events_running }
+			has_country_flag = cm_stopped
+			ai = no
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			set_country_flag = cm_events_running
+			clr_country_flag = cm_stopped
+			country_event = {
+				id = cm_control_events.100
+			}
+			every_country = {
+				limit = {
+					ai = no
+				}
+				save_event_target_as = cm_info_event
+				country_event = {
+					id = cm_control_events.51
+					tooltip = TOOLTIP_CHAOS_MOD_PLAYER_INFO
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,153 @@
+# Chaos mod stability event
+
+namespace = cm_stability_events
+
+# spawn pretenderr rebels
+country_event = {
+	id = cm_stability_events.1
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		capital_scope = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 3
+				leader = rebel_preacher
+			}
+		}
+	}
+}
+
+# add stability
+country_event = {
+	id = cm_stability_events.2
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_stability = 1
+	}
+}
+
+# remove stability
+country_event = {
+	id = cm_stability_events.3
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_stability = -1
+	}
+}
+
+# add war exhaustion
+country_event = {
+	id = cm_stability_events.4
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_war_exhaustion = 10
+	}
+}
+
+# remove war exhaustion
+country_event = {
+	id = cm_stability_events.5
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_war_exhaustion = -10
+	}
+}
+
+# add unrest to random provinces
+country_event = {
+	id = cm_stability_events.6
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_owned_province = {
+			add_unrest = 10
+		}
+		random_owned_province = {
+			add_unrest = 10
+		}
+		random_owned_province = {
+			add_unrest = 10
+		}
+		random_owned_province = {
+			add_unrest = 10
+		}
+		random_owned_province = {
+			add_unrest = 10
+		}
+	}
+}
+
+# create revolt
+country_event = {
+	id = cm_stability_events.7
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_owned_province = {
+			create_revolt = 2
+		}
+	}
+}
+
+# add seperatism
+country_event = {
+	id = cm_stability_events.8
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_owned_province = {
+			add_nationalism = 20
+		}
+		random_owned_province = {
+			add_nationalism = 20
+		}
+		random_owned_province = {
+			add_nationalism = 20
+		}
+	}
+}

@@ -1,2 +1,9 @@
 ﻿l_english:
- 
+ cm_settings_title: "Chaos mod settings"
+ cm_settings_desc: "Here you can adjust the chaos mod to your liking"
+ cm_stop_events_title: "Stop the events!"
+ cm_stop_events_desc: "You can stop the next event from happening. Be aware though that it may take a little while (until the next event would have happend) for this decision to take effect and for you to be able to turn it back on"
+ cm_restart_events_title: "Keep the events"
+ cm_restart_events_desc: "You have turned off the chaos mod, but the next event has not happened so your decision has not been finalized. If you click this decision now, the next event will happen normally as if you hadn't stopped it in the first place."
+ cm_start_events_title: "Turn the chaos mod back on"
+ cm_start_events_desc: "This decision will start the chaos mod again. It will use the current settings."

@@ -1,0 +1,178 @@
+# Chaos mod rel-tech event
+
+namespace = cm_rel_tech_events
+
+# convert provinces
+country_event = {
+	id = cm_rel_tech_events.1
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_owned_province = {
+			limit = {
+				NOT = { religion = catholic }
+			}
+			change_religion = catholic
+		}
+		random_owned_province = {
+			limit = {
+				NOT = { religion = protestant }
+			}
+			change_religion = protestant
+		}
+		random_owned_province = {
+			limit = {
+				NOT = { religion = orthodox }
+			}
+			change_religion = orthodox
+		}
+		random_owned_province = {
+			limit = {
+				NOT = { religion = sunni }
+			}
+			change_religion = sunni
+		}
+		random_owned_province = {
+			limit = {
+				NOT = { religion = shiite }
+			}
+			change_religion = shiite
+		}
+		random_owned_province = {
+			limit = {
+				NOT = { religion = hinduism }
+			}
+			change_religion = hinduism
+		}
+		random_owned_province = {
+			limit = {
+				NOT = { religion = confucianism }
+			}
+			change_religion = confucianism
+		}
+		random_owned_province = {
+			limit = {
+				NOT = { religion = shinto }
+			}
+			change_religion = shinto
+		}
+	}
+}
+
+# add church power
+country_event = {
+	id = cm_rel_tech_events.2
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_authority = 20
+		add_doom = -20
+		add_fervor = 20
+		add_karma = 20
+		add_church_power = 20
+		add_papal_influence = 20
+		add_piety = 20
+		add_patriarch_authority = 20
+		add_harmony = 20
+		add_isolationism = 1
+	}
+}
+
+# remove church power
+country_event = {
+	id = cm_rel_tech_events.3
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_authority = -20
+		add_doom = 20
+		add_fervor = -20
+		add_karma = -20
+		add_church_power = -20
+		add_papal_influence = -20
+		add_piety = -20
+		add_patriarch_authority = -20
+		add_harmony = -20
+		add_isolationism = -1
+	}
+}
+
+# add tech
+country_event = {
+	id = cm_rel_tech_events.4
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_list = {
+			1 = {
+				add_adm_tech = 1
+			}
+			1 = {
+				add_dip_tech = 1
+			}
+			1 = {
+				add_mil_tech = 1
+			}
+		}
+	}
+}
+
+# add cardinal
+country_event = {
+	id = cm_rel_tech_events.5
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_owned_province = {
+			limit = {
+				has_cardinal = no
+			}
+			add_cardinal = yes
+		}
+	}
+}
+
+# remove cardinal
+country_event = {
+	id = cm_rel_tech_events.6
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_owned_province = {
+			limit = {
+				has_cardinal = yes
+			}
+			remove_cardinal = yes
+		}
+	}
+}

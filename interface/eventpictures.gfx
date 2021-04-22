@@ -1,0 +1,20 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "CHAOS_ELMO_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_CHAOS/CHAOS_ELMO_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "CHAOS_PLANE_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_CHAOS/CHAOS_PLANE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "CHOAS_DUDE_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_CHAOS/CHOAS_DUDE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+}

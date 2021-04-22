@@ -1,0 +1,154 @@
+# Chaos mod special event
+
+namespace = cm_special_events
+
+# add imperial authority
+country_event = {
+	id = cm_special_events.1
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_imperial_influence = 25
+	}
+}
+
+# remove imperial authority
+country_event = {
+	id = cm_special_events.2
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_imperial_influence = -25
+	}
+}
+
+# add mandate
+country_event = {
+	id = cm_special_events.3
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_mandate = 25
+	}
+}
+
+# remove mandate
+country_event = {
+	id = cm_special_events.4
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_mandate = -25
+	}
+}
+
+# grant elecorate
+country_event = {
+	id = cm_special_events.5
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		elector = yes
+	}
+}
+
+# add siberian frontier
+country_event = {
+	id = cm_special_events.6
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_province = {
+			limit = {
+				is_empty = yes
+			}
+			add_siberian_construction = 0
+		}
+		random_province = {
+			limit = {
+				is_empty = yes
+			}
+			add_siberian_construction = 0
+		}
+		random_province = {
+			limit = {
+				is_empty = yes
+			}
+			add_siberian_construction = 0
+		}
+	}
+}
+
+# discover random region
+country_event = {
+	id = cm_special_events.7
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_province = {
+			limit = {
+				NOT = { has_discovered = ROOT }
+			}
+			region = {
+				discover_country = ROOT
+			}
+		}
+	}
+}
+
+# undiscover random region
+country_event = {
+	id = cm_special_events.8
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_province = {
+			limit = {
+				has_discovered = ROOT
+			}
+			region = {
+				undiscover_country = ROOT
+			}
+		}
+	}
+}

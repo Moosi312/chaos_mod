@@ -1,0 +1,394 @@
+# Chaos mod military event
+
+namespace = cm_military_events
+
+# add tradition
+country_event = {
+	id = cm_military_events.1
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_army_tradition = 20
+		add_navy_tradition = 20
+	}
+}
+
+# remove tradition
+country_event = {
+	id = cm_military_events.2
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_army_tradition = -20
+		add_navy_tradition = -20
+	}
+}
+
+# add manpower/sailors
+country_event = {
+	id = cm_military_events.3
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_yearly_manpower = 10
+		add_yearly_sailors = 10
+	}
+}
+
+# remove manpower/sailors
+country_event = {
+	id = cm_military_events.4
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_yearly_manpower = -10
+		add_yearly_sailors = -10
+	}
+}
+
+# kill random leader
+country_event = {
+	id = cm_military_events.5
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		kill_leader = {
+			type = random
+		}
+		kill_leader = {
+			type = random
+		}
+		kill_leader = {
+			type = random
+		}
+	}
+}
+
+# add random amazing leader
+country_event = {
+	id = cm_military_events.6
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		create_general = { tradition = 100 }
+	}
+}
+
+# spawn army
+country_event = {
+	id = cm_military_events.7
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		capital_scope = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+			cavalry = ROOT
+			artillery = ROOT
+			artillery = ROOT
+			artillery = ROOT
+			artillery = ROOT
+			artillery = ROOT
+			artillery = ROOT
+		}
+	}
+}
+
+# spawn navy
+country_event = {
+	id = cm_military_events.8
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_owned_province = {
+			limit = {
+				has_port = yes
+			}
+			galley = ROOT
+			galley = ROOT
+			galley = ROOT
+			galley = ROOT
+			galley = ROOT
+			galley = ROOT
+			galley = ROOT
+			galley = ROOT
+			galley = ROOT
+			galley = ROOT
+			light_ship = ROOT
+			light_ship = ROOT
+			light_ship = ROOT
+			light_ship = ROOT
+			light_ship = ROOT
+			light_ship = ROOT
+			heavy_ship = ROOT
+			heavy_ship = ROOT
+			heavy_ship = ROOT
+			heavy_ship = ROOT
+			transport = ROOT
+			transport = ROOT
+			transport = ROOT
+			transport = ROOT
+			transport = ROOT
+			transport = ROOT
+			transport = ROOT
+			transport = ROOT
+			transport = ROOT
+			transport = ROOT
+		}
+	}
+}
+
+# kill army units
+country_event = {
+	id = cm_military_events.9
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_owned_province = {
+			limit = {
+				OR = {
+					artillery_in_province = ROOT
+					cavalry_in_province = ROOT
+					infantry_in_province = ROOT
+				}
+			}
+			kill_units = {
+				who = owner
+				type = infantry
+				amount = 10
+			}
+			kill_units = {
+				who = owner
+				type = cavalry
+				amount = 6
+			}
+			kill_units = {
+				who = owner
+				type = artillery
+				amount = 4
+			}
+		}
+	}
+}
+
+# kill navy units
+country_event = {
+	id = cm_military_events.10
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_owned_province = {
+			limit = {
+				OR = {
+					heavy_ships_in_province = ROOT
+					light_ships_in_province = ROOT
+					galleys_in_province = ROOT
+					transports_in_province = ROOT
+				}
+			}
+			kill_units = {
+				who = owner
+				type = transport
+				amount = 10
+			}
+			kill_units = {
+				who = owner
+				type = galley
+				amount = 10
+			}
+			kill_units = {
+				who = owner
+				type = light_ship
+				amount = 6
+			}
+			kill_units = {
+				who = owner
+				type = heavy_ship
+				amount = 4
+			}
+		}
+	}
+}
+
+# add to siege
+country_event = {
+	id = cm_military_events.11
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_province = {
+			limit = {
+				sieged_by = ROOT
+			}
+			change_siege = 20
+		}
+	}
+}
+
+# remove from siege
+country_event = {
+	id = cm_military_events.12
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_province = {
+			limit = {
+				sieged_by = ROOT
+			}
+			change_siege = -20
+		}
+	}
+}
+
+# spawn specials
+country_event = {
+	id = cm_military_events.13
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_list = {
+			1 = {# streltsy
+				random_owned_province= {
+					streltsy_infantry = ROOT
+					streltsy_infantry = ROOT
+					streltsy_infantry = ROOT
+					streltsy_infantry = ROOT
+					streltsy_infantry = ROOT
+					streltsy_infantry = ROOT
+					streltsy_infantry = ROOT
+					streltsy_infantry = ROOT
+					streltsy_infantry = ROOT
+					streltsy_infantry = ROOT
+				}
+			}
+			1 = {# cossack
+				random_owned_province= {
+					cossack_cavalry = ROOT
+					cossack_cavalry = ROOT
+					cossack_cavalry = ROOT
+					cossack_cavalry = ROOT
+					cossack_cavalry = ROOT
+					cossack_cavalry = ROOT
+					cossack_cavalry = ROOT
+					cossack_cavalry = ROOT
+					cossack_cavalry = ROOT
+					cossack_cavalry = ROOT
+				}
+			}
+			1 = {# rajput
+				random_owned_province= {
+					rajput_infantry = ROOT
+					rajput_infantry = ROOT
+					rajput_infantry = ROOT
+					rajput_infantry = ROOT
+					rajput_infantry = ROOT
+					rajput_infantry = ROOT
+					rajput_infantry = ROOT
+					rajput_infantry = ROOT
+					rajput_infantry = ROOT
+					rajput_infantry = ROOT
+				}
+			}
+			1 = {# marines
+				random_owned_province= {
+					marine_infantry = ROOT
+					marine_infantry = ROOT
+					marine_infantry = ROOT
+					marine_infantry = ROOT
+					marine_infantry = ROOT
+					marine_infantry = ROOT
+					marine_infantry = ROOT
+					marine_infantry = ROOT
+					marine_infantry = ROOT
+					marine_infantry = ROOT
+				}
+			}
+		}
+	}
+}

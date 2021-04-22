@@ -1,0 +1,402 @@
+# Chaos mod economy event
+
+namespace = cm_economy_events
+
+# add year of income
+country_event = {
+	id = cm_economy_events.1
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_years_of_income = 1
+	}
+}
+
+# remove year of income
+country_event = {
+	id = cm_economy_events.2
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_years_of_income = -1
+	}
+}
+
+# add dev to capital
+country_event = {
+	id = cm_economy_events.3
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		capital = {
+			add_base_tax = 10
+			add_base_production = 10
+			add_base_manpower = 10
+		}
+	}
+}
+
+# remove dev from capital
+country_event = {
+	id = cm_economy_events.4
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		capital_scope = {
+			add_base_tax = -10
+			add_base_production = -10
+			add_base_manpower = -10
+		}
+	}
+}
+
+# add monarch power
+country_event = {
+	id = cm_economy_events.5
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
+}
+
+# remove monarch power
+country_event = {
+	id = cm_economy_events.6
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_adm_power = -100
+		add_dip_power = -100
+		add_mil_power = -100
+	}
+}
+
+# add inflation
+country_event = {
+	id = cm_economy_events.7
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_inflation = 10
+	}
+}
+
+# remove inflation
+country_event = {
+	id = cm_economy_events.8
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_inflation = -10
+	}
+}
+
+# add marcantilism
+country_event = {
+	id = cm_economy_events.9
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_mercantilism = 20
+	}
+}
+
+# remove marcantilism
+country_event = {
+	id = cm_economy_events.10
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_mercantilism = -20
+	}
+}
+
+# add building in random province
+country_event = {
+	id = cm_economy_events.11
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		if = {
+			limit = {
+				adm_tech = 4
+			}
+			random_owned_province = {
+				add_building = temple
+			}
+		}
+		if = {
+			limit = {
+				adm_tech = 19
+			}
+			random_owned_province = {
+				add_building = cathedral
+			}
+		}
+		if = {
+			limit = {
+				adm_tech = 6
+			}
+			random_owned_province = {
+				add_building = workshop
+			}
+		}
+		if = {
+			limit = {
+				adm_tech = 24
+			}
+			random_owned_province = {
+				add_building = counting_house
+			}
+		}
+		if = {
+			limit = {
+				mil_tech = 1
+			}
+			random_owned_province = {
+				add_building = fort_15th
+			}
+		}
+		if = {
+			limit = {
+				mil_tech = 14
+			}
+			random_owned_province = {
+				add_building = fort_16th
+			}
+		}
+		if = {
+			limit = {
+				mil_tech = 19
+			}
+			random_owned_province = {
+				add_building = fort_17th
+			}
+		}
+		if = {
+			limit = {
+				mil_tech = 24
+			}
+			random_owned_province = {
+				add_building = fort_18th
+			}
+		}
+		if = {
+			limit = {
+				dip_tech = 4
+			}
+			random_owned_province = {
+				add_building = marketplace
+			}
+		}
+		if = {
+			limit = {
+				dip_tech = 17
+			}
+			random_owned_province = {
+				add_building = trade_depot
+			}
+		}
+		if = {
+			limit = {
+				dip_tech = 22
+			}
+			random_owned_province = {
+				add_building = stock_exchange
+			}
+		}
+		if = {
+			limit = {
+				adm_tech = 17
+			}
+			random_owned_province = {
+				add_building = university
+			}
+		}
+	}
+}
+
+# increase center of trade
+country_event = {
+	id = cm_economy_events.12
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_owned_province = {
+			limit = {
+				province_has_center_of_trade_of_level = 1
+			}
+			add_center_of_trade_level = 1
+		}
+	}
+}
+
+# add center of trade
+country_event = {
+	id = cm_economy_events.13
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_owned_province = {
+			limit = {
+				NOT = { province_has_center_of_trade_of_level = 1 }
+			}
+			center_of_trade = 1
+		}
+	}
+}
+
+# remove buildings
+country_event = {
+	id = cm_economy_events.14
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_owned_province = {
+			limit = {
+				has_building = temple
+			}
+			remove_building = temple
+		}
+		random_owned_province = {
+			limit = {
+				has_building = cathedral
+			}
+			remove_building = cathedral
+		}
+		random_owned_province = {
+			limit = {
+				has_building = workshop
+			}
+			remove_building = workshop
+		}
+		random_owned_province = {
+			limit = {
+				has_building = counting_house
+			}
+			remove_building = counting_house
+		}
+		random_owned_province = {
+			limit = {
+				has_building = fort_15th
+			}
+			remove_building = fort_15th
+		}
+		random_owned_province = {
+			limit = {
+				has_building = fort_16th
+			}
+			remove_building = fort_16th
+		}
+		random_owned_province = {
+			limit = {
+				has_building = fort_17th
+			}
+			remove_building = fort_17th
+		}
+		random_owned_province = {
+			limit = {
+				has_building = fort_18th
+			}
+			remove_building = fort_18th
+		}
+		random_owned_province = {
+			limit = {
+				has_building = marketplace
+			}
+			remove_building = marketplace
+		}
+		random_owned_province = {
+			limit = {
+				has_building = trade_depot
+			}
+			remove_building = trade_depot
+		}
+		random_owned_province = {
+			limit = {
+				has_building = stock_exchange
+			}
+			remove_building = stock_exchange
+		}
+		random_owned_province = {
+			limit = {
+				has_building = university
+			}
+			remove_building = university
+		}
+}
+}
+

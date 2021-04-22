@@ -1,31 +1,394 @@
-# Chaos mod contorl events
+# Chaos mod government event
 
-namespace = cm_gov_events
+namespace = cm_government_events
 
-# Add stability
+# add legitimacy
 country_event = {
-	id = cm_gov_events.1
-	title = "cm_gov_events.1.t"
-	desc = "cm_gov_events.1.d"
+	id = cm_government_events.1
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = "cm_gov_events.1.a"
-		add_stability = 1
+		name = "chaos_mod_event_option_name"
+		add_legitimacy = 25
+		add_republican_tradition = 25
+		add_devotion = 25
+		add_horde_unity = 25
+		add_meritocracy = 25
 	}
 }
 
-# Add stability
+# remove legitimacy
 country_event = {
-	id = cm_gov_events.2
-	title = "cm_gov_events.2.t"
-	desc = "cm_gov_events.2.d"
+	id = cm_government_events.2
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = "cm_gov_events.2.a"
-		add_stability = -1
+		name = "chaos_mod_event_option_name"
+		add_legitimacy = -25
+		add_republican_tradition = -25
+		add_devotion = -25
+		add_horde_unity = -25
+		add_meritocracy = -25
+	}
+}
+
+# add prestige
+country_event = {
+	id = cm_government_events.3
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_prestige = 50
+	}
+}
+
+# remove prestige
+country_event = {
+	id = cm_government_events.4
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_prestige = -50
+	}
+}
+
+# add corruption
+country_event = {
+	id = cm_government_events.5
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_corruption = 15
+	}
+}
+
+# remove corruption
+country_event = {
+	id = cm_government_events.6
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_corruption = -15
+	}
+}
+
+# kill heir
+country_event = {
+	id = cm_government_events.7
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		kill_heir = yes
+	}
+}
+
+# replace heir crappy
+country_event = {
+	id = cm_government_events.8
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		define_heir = {
+			dynasty = ROOT
+			age = 0
+			max_random_adm = 3
+			max_random_dip = 3
+			max_random_mil = 3
+			claim = 25
+			hide_skills = yes
+		}
+	}
+}
+
+# replace heir amazing
+country_event = {
+	id = cm_government_events.9
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		define_heir = {
+			dynasty = ROOT
+			age = 0
+			adm = 4
+			dip = 4
+			mil = 4
+			claim = 100
+			hide_skills = yes
+		}
+	}
+}
+
+# add monarch skill
+country_event = {
+	id = cm_government_events.10
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		change_adm = 1
+		change_dip = 1
+		change_mil = 1
+	}
+}
+
+# remove monarch skill
+country_event = {
+	id = cm_government_events.11
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		change_adm = -1
+		change_dip = -1
+		change_mil = -1
+	}
+}
+
+# increase government rank
+country_event = {
+	id = cm_government_events.12
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		if = {
+			limit = {
+				government_rank = 1
+				NOT = { government_rank = 2 }
+			}
+			set_government_rank = 2
+		}
+		if = {
+			limit = {
+				government_rank = 2
+				NOT = { government_rank = 3 }
+			}
+			set_government_rank = 3
+		}
+	}
+}
+
+# decrease government rank
+country_event = {
+	id = cm_government_events.13
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		if = {
+			limit = {
+				government_rank = 3
+			}
+			set_government_rank = 2
+		}
+		if = {
+			limit = {
+				government_rank = 2
+				NOT = { government_rank = 3 }
+			}
+			set_government_rank = 1
+		}
+	}
+}
+
+# kill advisors
+country_event = {
+	id = cm_government_events.14
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		kill_advisor = random
+		kill_advisor = random
+		kill_advisor = random
+	}
+}
+
+# add advisor
+country_event = {
+	id = cm_government_events.15
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_list = {
+			1 = {
+				define_advisor = {
+					type = natural_scientist
+					skill = 3
+					culture = ROOT
+					religion = ROOT
+					cost_multiplier = 0.2
+				}
+			}
+			1 = {
+				define_advisor = {
+					type = treasurer
+					skill = 3
+					culture = ROOT
+					religion = ROOT
+					cost_multiplier = 0.2
+				}
+			}
+			1 = {
+				define_advisor = {
+					type = trader
+					skill = 3
+					culture = ROOT
+					religion = ROOT
+					cost_multiplier = 0.2
+				}
+			}
+			1 = {
+				define_advisor = {
+					type = statesman
+					skill = 3
+					culture = ROOT
+					religion = ROOT
+					cost_multiplier = 0.2
+				}
+			}
+			1 = {
+				define_advisor = {
+					type = army_reformer
+					skill = 3
+					culture = ROOT
+					religion = ROOT
+					cost_multiplier = 0.2
+				}
+			}
+			1 = {
+				define_advisor = {
+					type = commandant
+					skill = 3
+					culture = ROOT
+					religion = ROOT
+					cost_multiplier = 0.2
+				}
+			}
+		}
+	}
+}
+
+# add estate land
+country_event = {
+	id = cm_government_events.16
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		change_estate_land_share = {
+			estate = all
+			share = -10
+		}
+	}
+}
+
+# remove estate land
+country_event = {
+	id = cm_government_events.17
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		change_estate_land_share = {
+			estate = all
+			share = 10
+		}
+	}
+}
+
+# amazing consort
+country_event = {
+	id = cm_government_events.18
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		define_consort = {
+			adm = 6
+			dip = 6
+			mil = 6
+			female = yes
+		}
 	}
 }

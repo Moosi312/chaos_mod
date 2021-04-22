@@ -1,15 +1,603 @@
+# THis is the main chaos scripts with a massive list containing all the random events
+# Not sre how efficient that is, but is seems to work fine now. Let's see how manny effects we can add before this random _list crashes
 
 cm_choas_main_function = {
 	random_list = {
-		1 = {
+
+		##############################
+		########   EFFECTS    ########
+		##############################
+
+		### DIPLOMACY EVENTS ###
+
+		1 = { # add historical friend
 			country_event = {
-				id = cm_gov_events.1
+				id = cm_diplomacy_events.1
 			}
 		}
-		1 = {
+		1 = { # add historical rival
 			country_event = {
-				id = cm_gov_events.2
+				id = cm_diplomacy_events.2
 			}
 		}
+		1 = { # declare war against neighbor
+			country_event = {
+				id = cm_diplomacy_events.3
+			}
+		}
+		1 = { # white peace
+			country_event = {
+				id = cm_diplomacy_events.4
+			}
+			modifier = {
+				factor = 0
+				is_at_war = no
+			}
+		}
+		1 = { # annex cb against neighbor
+			country_event = {
+				id = cm_diplomacy_events.5
+			}
+		}
+		1 = { # vassal cb against neighbor
+			country_event = {
+				id = cm_diplomacy_events.6
+			}
+		}
+		1 = { # random core
+			country_event = {
+				id = cm_diplomacy_events.7
+			}
+		}
+		1 = { # add serveral claims abroad
+			country_event = {
+				id = cm_diplomacy_events.8
+			}
+		}
+		1 = { # remove random core
+			country_event = {
+				id = cm_diplomacy_events.9
+			}
+		}
+
+		### ECONOMY EVENTS ###
+
+		1 = { # add year of income
+			country_event = {
+				id = cm_economy_events.1
+			}
+		}
+		
+		1 = { # remove year of income
+			country_event = {
+				id = cm_economy_events.2
+			}
+		}
+		
+		1 = { # add dev to capital
+			country_event = {
+				id = cm_economy_events.3
+			}
+		}
+		
+		1 = { # remove dev from capital
+			country_event = {
+				id = cm_economy_events.4
+			}
+		}
+		
+		1 = { # add monarch power
+			country_event = {
+				id = cm_economy_events.5
+			}
+		}
+		
+		1 = { # remove monarch power
+			country_event = {
+				id = cm_economy_events.6
+			}
+		}
+		
+		1 = { # add inflation
+			country_event = {
+				id = cm_economy_events.7
+			}
+		}
+		
+		1 = { # remove inflation
+			country_event = {
+				id = cm_economy_events.8
+			}
+		}
+		
+		1 = { # add marcantilism
+			country_event = {
+				id = cm_economy_events.9
+			}
+		}
+		
+		1 = { # remove marcantilism
+			country_event = {
+				id = cm_economy_events.10
+			}
+		}
+		
+		1 = { # add building in random province
+			country_event = {
+				id = cm_economy_events.11
+			}
+		}
+		
+		1 = { # increase center of trade
+			country_event = {
+				id = cm_economy_events.12
+			}
+		}
+		
+		1 = { # add center of trade
+			country_event = {
+				id = cm_economy_events.13
+			}
+		}
+		
+		1 = { # remove buildings
+			country_event = {
+				id = cm_economy_events.14
+			}
+		}
+		
+		### GOVERNMENT EVENTS ###
+
+		
+		1 = { # add legitimacy
+			country_event = {
+				id = cm_government_events.1
+			}
+		}
+		
+		1 = { # remove legitimacy
+			country_event = {
+				id = cm_government_events.2
+			}
+		}
+		
+		1 = { # add prestige
+			country_event = {
+				id = cm_government_events.3
+			}
+		}
+		
+		1 = { # remove prestige
+			country_event = {
+				id = cm_government_events.4
+			}
+		}
+		
+		1 = { # add corruption
+			country_event = {
+				id = cm_government_events.5
+			}
+		}
+		
+		1 = { # remove corruption
+			country_event = {
+				id = cm_government_events.6
+			}
+		}
+		
+		1 = { # kill heir
+			country_event = {
+				id = cm_government_events.7
+			}
+			modifier = {
+				factor = 0
+				has_heir = no
+			}
+		}
+		
+		1 = { # replace heir crappy
+			country_event = {
+				id = cm_government_events.8
+			}
+		}
+		
+		1 = { # replace heir amazing
+			country_event = {
+				id = cm_government_events.9
+			}
+		}
+		
+		1 = { # add monarch skill
+			country_event = {
+				id = cm_government_events.10
+			}
+		}
+		
+		1 = { # remove monarch skill
+			country_event = {
+				id = cm_government_events.11
+			}
+		}
+		
+		1 = { # increase government rank
+			country_event = {
+				id = cm_government_events.12
+			}
+			modifier = {
+				factor = 0
+				government_rank = 3
+			}
+		}
+		
+		1 = { # decrease government rank
+			country_event = {
+				id = cm_government_events.13
+			}
+			modifier = {
+				factor = 0
+				NOT = { government_rank = 2 }
+			}
+		}
+		
+		1 = { # kill advisors
+			country_event = {
+				id = cm_government_events.14
+			}
+			modifier = {
+				factor = 0
+				NOT = { has_advisor = yes }
+			}
+		}
+		
+		1 = { # add advisor
+			country_event = {
+				id = cm_government_events.15
+			}
+		}
+		
+		1 = { # add estate land
+			country_event = {
+				id = cm_government_events.16
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					estate_territory = {
+						estate = all
+						territory = 1
+					}
+				}
+			}
+		}
+		
+		1 = { # remove estate land
+			country_event = {
+				id = cm_government_events.17
+			}
+			modifier = {
+				factor = 0
+				estate_territory = {
+					estate = all
+					territory = 100
+				}
+			}
+		}
+		
+		1 = { # amazing consort
+			country_event = {
+				id = cm_government_events.18
+			}
+			modifier = {
+				factor = 0
+				has_regency = yes
+			}
+		}
+		
+		
+		### MILITARY EVENTS ###
+
+		1 = { # add tradition
+			country_event = {
+				id = cm_military_events.1
+			}
+		}
+		
+		1 = { # remove tradition
+			country_event = {
+				id = cm_military_events.2
+			}
+		}
+		
+		1 = { # add manpower/sailors
+			country_event = {
+				id = cm_military_events.3
+			}
+		}
+		
+		1 = { # remove manpower/sailors
+			country_event = {
+				id = cm_military_events.4
+			}
+		}
+		
+		1 = { # kill random leader
+			country_event = {
+				id = cm_military_events.5
+			}
+		}
+		
+		1 = { # add random amazing leader
+			country_event = {
+				id = cm_military_events.6
+			}
+		}
+		
+		1 = { # spawn army
+			country_event = {
+				id = cm_military_events.7
+			}
+		}
+		
+		1 = { # spawn navy
+			country_event = {
+				id = cm_military_events.8
+			}
+			modifier = {
+				factor = 0
+				NOT = { num_of_total_ports = 1 }
+			}
+		}
+		
+		1 = { # kill army units
+			country_event = {
+				id = cm_military_events.9
+			}
+		}
+		
+		1 = { # kill navy units
+			country_event = {
+				id = cm_military_events.10
+			}
+			modifier = {
+				factor = 0
+				NOT = { num_of_total_ports = 1 }
+			}
+		}
+		
+		1 = { # add to siege
+			country_event = {
+				id = cm_military_events.11
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_province = {
+						sieged_by = ROOT
+					}
+				}
+			}
+		}
+		
+		1 = { # remove from siege
+			country_event = {
+				id = cm_military_events.12
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_province = {
+						sieged_by = ROOT
+					}
+				}
+			}
+		}
+		
+		1 = { # spawn specials
+			country_event = {
+				id = cm_military_events.13
+			}
+		}
+		
+		
+		### REL-TECH EVENTS ###
+		
+		1 = { # convert provinces
+			country_event = {
+				id = cm_rel_tech_events.1
+			}
+		}
+		
+		1 = { # add church power
+			country_event = {
+				id = cm_rel_tech_events.2
+			}
+		}
+		
+		1 = { # remove church power
+			country_event = {
+				id = cm_rel_tech_events.3
+			}
+		}
+		
+		1 = { # add tech
+			country_event = {
+				id = cm_rel_tech_events.4
+			}
+		}
+		
+		1 = { # add cardinal
+			country_event = {
+				id = cm_rel_tech_events.5
+			}
+			modifier = {
+				factor = 0
+				NOT = { religion = catholic }
+			}
+		}
+		
+		1 = { # remove cardinal
+			country_event = {
+				id = cm_rel_tech_events.6
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					any_owned_province = {
+						has_cardinal = yes
+					}
+				}
+			}
+		}
+		
+		
+		### SPECIAL EVENTS ###
+
+		1 = { # add imperial authority
+			country_event = {
+				id = cm_special_events.1
+			}
+			modifier = {
+				factor = 0
+				is_emperor = no
+			}
+		}
+		
+		1 = { # remove imperial authority
+			country_event = {
+				id = cm_special_events.2
+			}
+			modifier = {
+				factor = 0
+				is_emperor = no
+			}
+		}
+		
+		1 = { # add mandate
+			country_event = {
+				id = cm_special_events.3
+			}
+			modifier = {
+				factor = 0
+				is_emperor_of_china = no
+			}
+		}
+		
+		1 = { # remove mandate
+			country_event = {
+				id = cm_special_events.4
+			}
+			modifier = {
+				factor = 0
+				is_emperor_of_china = no
+			}
+		}
+		
+		1 = { # grant elecorate
+			country_event = {
+				id = cm_special_events.5
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					num_of_electors = 7
+					is_part_of_hre = no
+				}
+			}
+		}
+		
+		1 = { # add siberian frontier
+			country_event = {
+				id = cm_special_events.6
+			}
+		}
+		
+		1 = { # discover random region
+			country_event = {
+				id = cm_special_events.7
+			}
+		}
+		
+		1 = { # undiscover random region
+			country_event = {
+				id = cm_special_events.8
+			}
+		}
+		
+		
+		### STABILITY EVENTS ###
+
+		1 = { # spawn pretenderr rebels
+			country_event = {
+				id = cm_stability_events.1
+			}
+		}
+		
+		1 = { # add stability
+			country_event = {
+				id = cm_stability_events.2
+			}
+		}
+		
+		1 = { # remove stability
+			country_event = {
+				id = cm_stability_events.3
+			}
+		}
+		
+		1 = { # add war exhaustion
+			country_event = {
+				id = cm_stability_events.4
+			}
+		}
+		
+		1 = { # remove war exhaustion
+			country_event = {
+				id = cm_stability_events.5
+			}
+		}
+		
+		1 = { # add unrest to random provinces
+			country_event = {
+				id = cm_stability_events.6
+			}
+		}
+		
+		1 = { # create revolt
+			country_event = {
+				id = cm_stability_events.7
+			}
+		}
+		
+		1 = { # add seperatism
+			country_event = {
+				id = cm_stability_events.8
+			}
+		}
+		
+
+		################################
+		########   MODIFIERS    ########
+		################################
+
+		### DIPLOMACY EVENTS ###
+
+
+		### ECONOMY EVENTS ###
+
+		
+		### GOVERNMENT EVENTS ###
+
+		
+		### MILITARY EVENTS ###
+
+		
+		### REL-TECH EVENTS ###
+
+		
+		### SPECIAL EVENTS ###
+
+		
+		### STABILITY EVENTS ###
+
 	}
 }

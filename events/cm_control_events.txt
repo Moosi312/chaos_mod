@@ -7,13 +7,14 @@ country_event = {
 	id = cm_control_events.1
 	title = "cm_control_events.1.t"
 	desc = "cm_control_events.1.d"
-	picture = 4_Rajput_Estate_eventPicture
+	picture = CHAOS_ELMO_eventPicture
+
+	trigger = {
+		ai = no
+		not = { has_global_flag = cm_start_event }
+	}
 
 	fire_only_once = yes
-	
-	trigger = {
-		NOT = { has_global_flag = cm_start_event }
-	}
 
 	immediate = {
 		clr_global_flag = cm_frequency_one_month
@@ -21,11 +22,24 @@ country_event = {
 		clr_global_flag = cm_frequency_six_months
 		clr_global_flag = cm_frequency_one_year
 		set_global_flag = cm_start_event
-	}
 
-	after = {
-		country_event = {
-			id = cm_control_events.100
+		if = {
+			limit = {
+				NOT = {has_global_flag = cm_bad_effect_duration_short}
+				NOT = {has_global_flag = cm_bad_effect_duration_medium}
+				NOT = {has_global_flag = cm_bad_effect_duration_long}
+				NOT = {has_global_flag = cm_bad_effect_duration_insane}
+			}
+			set_global_flag = cm_bad_effect_duration_medium
+		}
+		if = {
+			limit = {
+				NOT = {has_global_flag = cm_good_effect_duration_medium}
+				NOT = {has_global_flag = cm_good_effect_duration_short}
+				NOT = {has_global_flag = cm_good_effect_duration_long}
+				NOT = {has_global_flag = cm_good_effect_duration_insane}
+			}
+			set_global_flag = cm_good_effect_duration_medium
 		}
 	}
 
@@ -36,29 +50,79 @@ country_event = {
 			which = cm_event_frequency
 			value = 30
 		}
+		set_country_flag = cm_events_running
+		every_country = {
+			limit = {
+				ai = no
+			}
+			country_event = {
+				id = cm_control_events.100
+			}
+		}
 	}
 	option = { # 3 month
-		name = "cm_control_events.1.a"
+		name = "cm_control_events.1.b"
 		set_global_flag = cm_frequency_three_months
 		set_variable = {
 			which = cm_event_frequency
 			value = 90
 		}
+		set_country_flag = cm_events_running
+		every_country = {
+			limit = {
+				ai = no
+			}
+			country_event = {
+				id = cm_control_events.100
+			}
+		}
 	}
 	option = { # 6 month
-		name = "cm_control_events.1.a"
+		name = "cm_control_events.1.c"
 		set_global_flag = cm_frequency_six_months
 		set_variable = {
 			which = cm_event_frequency
 			value = 180
 		}
+		set_country_flag = cm_events_running
+		every_country = {
+			limit = {
+				ai = no
+			}
+			country_event = {
+				id = cm_control_events.100
+			}
+		}
 	}
 	option = { # 1 year
-		name = "cm_control_events.1.a"
+		name = "cm_control_events.1.e"
 		set_global_flag = cm_frequency_one_year
 		set_variable = {
 			which = cm_event_frequency
 			value = 360
+		}
+		set_country_flag = cm_events_running
+		every_country = {
+			limit = {
+				ai = no
+			}
+			country_event = {
+				id = cm_control_events.100
+			}
+		}
+	}
+	option = {
+		name = "cm_control_events.1.f"
+		set_country_flag = cm_stopped
+		every_country = {
+			limit = {
+				ai = no
+			}
+			save_event_target_as = cm_info_event
+			country_event = {
+				id = cm_control_events.50
+				tooltip = TOOLTIP_CHAOS_MOD_PLAYER_INFO
+			}
 		}
 	}
 }
@@ -68,13 +132,14 @@ country_event = {
 	id = cm_control_events.2
 	title = "cm_control_events.2.t"
 	desc = "cm_control_events.2.d"
+	picture = CHAOS_ELMO_eventPicture
 
 	is_triggered_only = yes
 
 	option = { # set frequency
 		name = "cm_control_events.2.a"
 		country_event = {
-			id = cm_control_events.1
+			id = cm_control_events.5
 		}
 	}
 	option = { # set bad effect duration
@@ -89,6 +154,9 @@ country_event = {
 			id = cm_control_events.4
 		}
 	}
+	option = { # exit
+		name = "cm_control_events.2.x"
+	}
 }
 
 # bad effect duration
@@ -96,8 +164,15 @@ country_event = {
 	id = cm_control_events.3
 	title = "cm_control_events.3.t"
 	desc = "cm_control_events.3.d"
+	picture = CHAOS_ELMO_eventPicture
 
 	is_triggered_only = yes
+
+	after = {
+		country_event = {
+			id = cm_control_events.2
+		}
+	}
 
 	option = { # short
 		name = "cm_control_events.3.a"
@@ -138,8 +213,15 @@ country_event = {
 	id = cm_control_events.4
 	title = "cm_control_events.4.t"
 	desc = "cm_control_events.4.d"
+	picture = CHAOS_ELMO_eventPicture
 
 	is_triggered_only = yes
+
+	after = {
+		country_event = {
+			id = cm_control_events.2
+		}
+	}
 
 	option = { # short
 		name = "cm_control_events.4.a"
@@ -175,54 +257,162 @@ country_event = {
 	}
 }
 
+# Frequency setting
+country_event = {
+	id = cm_control_events.5
+	title = "cm_control_events.5.t"
+	desc = "cm_control_events.5.d"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	after = {
+		country_event = {
+			id = cm_control_events.2
+		}
+	}
+
+	option = { # 1 month
+		name = "cm_control_events.1.a"
+		clr_global_flag = cm_frequency_one_month
+		clr_global_flag = cm_frequency_three_months
+		clr_global_flag = cm_frequency_six_months
+		clr_global_flag = cm_frequency_one_year
+		set_global_flag = cm_frequency_one_month
+		set_variable = {
+			which = cm_event_frequency
+			value = 30
+		}
+	}
+	option = { # 3 month
+		name = "cm_control_events.1.a"
+		clr_global_flag = cm_frequency_one_month
+		clr_global_flag = cm_frequency_three_months
+		clr_global_flag = cm_frequency_six_months
+		clr_global_flag = cm_frequency_one_year
+		set_global_flag = cm_frequency_three_months
+		set_variable = {
+			which = cm_event_frequency
+			value = 90
+		}
+	}
+	option = { # 6 month
+		name = "cm_control_events.1.a"
+		clr_global_flag = cm_frequency_one_month
+		clr_global_flag = cm_frequency_three_months
+		clr_global_flag = cm_frequency_six_months
+		clr_global_flag = cm_frequency_one_year
+		set_global_flag = cm_frequency_six_months
+		set_variable = {
+			which = cm_event_frequency
+			value = 180
+		}
+	}
+	option = { # 1 year
+		name = "cm_control_events.1.a"
+		clr_global_flag = cm_frequency_one_month
+		clr_global_flag = cm_frequency_three_months
+		clr_global_flag = cm_frequency_six_months
+		clr_global_flag = cm_frequency_one_year
+		set_global_flag = cm_frequency_one_year
+		set_variable = {
+			which = cm_event_frequency
+			value = 360
+		}
+	}
+}
+
+country_event = {
+	id = cm_control_events.50
+	title = "cm_control_events.50.t"
+	desc = "cm_control_events.50.d"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "cm_control_events.50.a"
+	}
+}
+
+country_event = {
+	id = cm_control_events.51
+	title = "cm_control_events.51.t"
+	desc = "cm_control_events.51.d"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "cm_control_events.51.a"
+	}
+}
+
 country_event = {
 	id = cm_control_events.100
 	title = "cm_control_events.100.t"
 	desc = "cm_control_events.100.d"
+
+	is_triggered_only = yes
 
 	hidden = yes
 
 	immediate = {
 		if = {
 			limit = {
-				has_global_flag = cm_frequency_one_month
+				has_country_flag = cm_events_running
 			}
-			country_event = {
-				id = cm_control_events.100
-				days = 30
+			if = {
+				limit = {
+					has_global_flag = cm_frequency_one_month
+				}
+				country_event = {
+					id = cm_control_events.100
+					days = 30
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = cm_frequency_three_months
+				}
+				country_event = {
+					id = cm_control_events.100
+					days = 90
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = cm_frequency_six_months
+				}
+				country_event = {
+					id = cm_control_events.100
+					days = 180
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = cm_frequency_one_year
+				}
+				country_event = {
+					id = cm_control_events.100
+					days = 360
+				}
+			}
+			cm_choas_main_function = yes
+		}
+		else = {
+			set_country_flag = cm_stopped
+			every_country = {
+				limit = {
+					ai = no
+				}
+				save_event_target_as = cm_info_event
+				country_event = {
+					id = cm_control_events.50
+				}
 			}
 		}
-		if = {
-			limit = {
-				has_global_flag = cm_frequency_three_months
-			}
-			country_event = {
-				id = cm_control_events.100
-				days = 90
-			}
-		}
-		if = {
-			limit = {
-				has_global_flag = cm_frequency_six_months
-			}
-			country_event = {
-				id = cm_control_events.100
-				days = 180
-			}
-		}
-		if = {
-			limit = {
-				has_global_flag = cm_frequency_one_year
-			}
-			country_event = {
-				id = cm_control_events.100
-				days = 360
-			}
-		}
-		cm_choas_main_function = yes
 	}
 
 	option = { # okay?
-		name = "cm_control_events.100.a"
+		name = cm_control_events.100.a
 	}
 }

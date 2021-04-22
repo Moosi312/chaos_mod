@@ -1,0 +1,200 @@
+# Chaos mod diplomacy event
+
+namespace = cm_diplomacy_events
+
+# add historical friend
+country_event = {
+	id = cm_diplomacy_events.1
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_country = {
+			ROOT = {
+				add_historical_friend = PREV
+			}
+			add_historical_friend = ROOT
+		}
+	}
+}
+
+# add historical rival
+country_event = {
+	id = cm_diplomacy_events.2
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_country = {
+			ROOT = {
+				add_historical_rival = PREV
+			}
+			add_historical_rival = ROOT
+		}
+	}
+}
+
+# declare war against neighbor
+country_event = {
+	id = cm_diplomacy_events.3
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_neighbor_country = {
+			ROOT = {
+				declare_war = PREV
+			}
+		}
+	}
+}
+
+# white peace
+country_event = {
+	id = cm_diplomacy_events.4
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_country = {
+			limit = {
+				war_with = ROOT
+			}
+			ROOT = {
+				white_peace = PREV
+			}
+		}
+	}
+}
+
+# annex cb against neighbor
+country_event = {
+	id = cm_diplomacy_events.5
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_neighbor_country = {
+			ROOT = {
+				add_casus_belli = {
+					target = PREV
+					type = cb_annex
+					months = 12
+				}
+			}
+		}
+	}
+}
+
+# vassal cb against neighbor
+country_event = {
+	id = cm_diplomacy_events.6
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_neighbor_country = {
+			ROOT = {
+				add_casus_belli = {
+					target = PREV
+					type = cb_vassalize_mission
+					months = 12
+				}
+			}
+		}
+	}
+}
+
+# random core
+country_event = {
+	id = cm_diplomacy_events.7
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_province = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			add_core = ROOT
+		}
+	}
+}
+
+# add serveral claims abroad
+country_event = {
+	id = cm_diplomacy_events.8
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_province = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+				NOT = { is_claim = ROOT }
+			}
+			add_claim = ROOT
+		}
+		random = {
+			chance = 75
+			
+			country_event = {
+				id = cm_diplomacy_events.8
+				days = 1
+				tooltip = "chaos_mod_event_more"
+			}
+		}
+		
+	}
+}
+
+# remove random core
+country_event = {
+	id = cm_diplomacy_events.9
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_core_province = {
+			remove_core = ROOT
+		}
+	}
+}
