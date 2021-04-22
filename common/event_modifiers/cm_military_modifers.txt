@@ -1,0 +1,250 @@
+cm_mil_army_great = {
+	land_morale = 0.2
+	discipline = 0.1
+	siege_ability = 0.2
+}
+cm_mil_army_bonus = {
+	land_morale = 0.1
+	discipline = 0.05
+	siege_ability = 0.1
+}
+cm_mil_army_malus = {
+	land_morale = -0.1
+	discipline = -0.05
+	siege_ability = -0.1
+}
+cm_mil_army_fucked = {
+	land_morale = -0.2
+	discipline = -0.1
+	siege_ability = -0.2
+}
+
+cm_mil_morale_great = {
+	land_morale = 0.4
+}
+cm_mil_morale_bonus = {
+	land_morale = 0.2
+}
+cm_mil_morale_malus = {
+	land_morale = -0.2
+}
+cm_mil_morale_fucked = {
+	land_morale = -0.4
+}
+
+cm_mil_discipline_great = {
+	discipline = 0.2
+}
+cm_mil_discipline_bonus = {
+	discipline = 0.1
+}
+cm_mil_discipline_malus = {
+	discipline = -0.1
+}
+cm_mil_discipline_fucked = {
+	discipline = -0.2
+}
+
+cm_mil_tradition_great = {
+	army_tradition = 10
+	navy_tradition = 10
+}
+cm_mil_tradition_bonus = {
+	army_tradition = 5
+	navy_tradition = 5
+}
+cm_mil_tradition_malus = {
+	army_tradition = -5
+	navy_tradition = -5
+}
+cm_mil_tradition_fucked = {
+	army_tradition = -10
+	navy_tradition = -10
+}
+
+cm_mil_army_cost_great = {
+	infantry_cost = -0.5
+	cavalry_cost = -0.5
+	artillery_cost = -0.5
+	land_maintenance_modifier = -0.5
+}
+cm_mil_army_cost_bonus = {
+	infantry_cost = -0.2
+	cavalry_cost = -0.2
+	artillery_cost = -0.2
+	land_maintenance_modifier = -0.2
+}
+cm_mil_army_cost_malus = {
+	infantry_cost = 0.2
+	cavalry_cost = 0.2
+	artillery_cost = 0.2
+	land_maintenance_modifier = 0.2
+}
+cm_mil_army_cost_fucked = {
+	infantry_cost = 0.5
+	cavalry_cost = 0.5
+	artillery_cost = 0.5
+	land_maintenance_modifier = 0.5
+}
+
+cm_mil_navy_cost_great = {
+	transport_cost = -0.5
+	galley_cost = -0.5
+	light_ship_cost = -0.5
+	heavy_ship_cost = -0.5
+	naval_maintenance_modifier = -0.5
+}
+cm_mil_navy_cost_bonus = {
+	transport_cost = -0.2
+	galley_cost = -0.2
+	light_ship_cost = -0.2
+	heavy_ship_cost = -0.2
+	naval_maintenance_modifier = -0.2
+}
+cm_mil_navy_cost_malus = {
+	transport_cost = 0.2
+	galley_cost = 0.2
+	light_ship_cost = 0.2
+	heavy_ship_cost = 0.2
+	naval_maintenance_modifier = 0.2
+}
+cm_mil_navy_cost_fucked = {
+	transport_cost = 0.5
+	galley_cost = 0.5
+	light_ship_cost = 0.5
+	heavy_ship_cost = 0.5
+	naval_maintenance_modifier = 0.5
+}
+
+cm_mil_army_pips_great = {
+	infantry_fire = 2
+	infantry_shock = 2
+	cavalry_fire = 2
+	cavalry_shock = 2
+	artillery_fire = 2
+	artillery_shock = 2
+}
+cm_mil_army_pips_bonus = {
+infantry_fire = 1
+	infantry_shock = 1
+	cavalry_fire = 1
+	cavalry_shock = 1
+	artillery_fire = 1
+	artillery_shock = 1
+}
+cm_mil_army_pips_malus = {
+infantry_fire = -1
+	infantry_shock = -1
+	cavalry_fire = -1
+	cavalry_shock = -1
+	artillery_fire = -1
+	artillery_shock = -1
+}
+cm_mil_army_pips_fucked = {
+infantry_fire = -2
+	infantry_shock = -2
+	cavalry_fire = -2
+	cavalry_shock = -2
+	artillery_fire = -2
+	artillery_shock = -2
+}
+
+cm_mil_navy_strenght_great = {
+	transport_power = 0.5
+	galley_power = 0.5
+	light_ship_power = 0.5
+	heavy_ship_power = 0.5
+}
+cm_mil_navy_strenght_bonus = {
+transport_power = 0.2
+	galley_power = 0.2
+	light_ship_power = 0.2
+	heavy_ship_power = 0.2
+}
+cm_mil_navy_strenght_malus = {
+transport_power = -0.2
+	galley_power = -0.2
+	light_ship_power = -0.2
+	heavy_ship_power = -0.2
+}
+cm_mil_navy_strenght_fucked = {
+transport_power = -0.5
+	galley_power = -0.5
+	light_ship_power = -0.5
+	heavy_ship_power = -0.5
+}
+
+cm_mil_movement_great = {
+	movement_speed = 1
+	movement_speed_onto_off_boat_modifier = 3
+}
+cm_mil_movement_bonus = {
+	movement_speed = 0.5
+	movement_speed_onto_off_boat_modifier = 1
+}
+cm_mil_movement_malus = {
+	movement_speed = -0.5
+	movement_speed_onto_off_boat_modifier = -1
+}
+cm_mil_movement_fucked = {
+	movement_speed = -1
+	movement_speed_onto_off_boat_modifier = -3
+}
+
+cm_mil_manpower_great = {
+	global_manpower_modifier = 1
+	manpower_recovery_speed = 1
+	global_sailors_modifier = 1
+	sailors_recovery_speed = 1
+}
+cm_mil_manpower_bonus = {
+	global_manpower_modifier = 0.5
+	manpower_recovery_speed = 0.5
+	global_sailors_modifier = 0.5
+	sailors_recovery_speed = 0.5
+}
+cm_mil_manpower_malus = {
+	global_manpower_modifier = -0.5
+	manpower_recovery_speed = -0.5
+	global_sailors_modifier = -0.5
+	sailors_recovery_speed = -0.5
+}
+cm_mil_manpower_fucked = {
+	global_manpower_modifier = -1
+	manpower_recovery_speed = -1
+	global_sailors_modifier = -1
+	sailors_recovery_speed = -1
+}
+
+cm_mil_mercs_great = {
+	merc_maintenance_modifier = -0.5
+	mercenary_cost = -0.5
+	mercenary_manpower = 1
+	mercenary_discipline = 0.3
+}
+cm_mil_mercs_bonus = {
+	merc_maintenance_modifier = -0.2
+	mercenary_cost = -0.2
+	mercenary_manpower = 0.5
+	mercenary_discipline = 0.1
+}
+cm_mil_mercs_malus = {
+	merc_maintenance_modifier = 0.2
+	mercenary_cost = 0.2
+	mercenary_manpower = -0.5
+	mercenary_discipline = -0.1
+}
+cm_mil_mercs_fucked = {
+	merc_maintenance_modifier = 0.5
+	mercenary_cost = 0.5
+	mercenary_manpower = -1
+	mercenary_discipline = -0.3
+}
+
+cm_mil_allow_raids_diff = {
+	may_perform_slave_raid = yes
+}
+
+cm_mil_allow_raids_rel = {
+	may_perform_slave_raid_on_same_religion = yes
+}

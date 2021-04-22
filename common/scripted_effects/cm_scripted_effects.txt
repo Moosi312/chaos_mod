@@ -1,0 +1,143 @@
+cm_add_modifiers_standard = {
+	random_list = {
+		1 = {
+			cm_add_good_modifier_exact = { MODIFIER = $MOD_GREAT$ }
+		}
+		1 = {
+			cm_add_good_modifier_exact = { MODIFIER = $MOD_GOOD$ }
+		}
+		1 = {
+			cm_add_bad_modifier_exact = { MODIFIER = $MOD_BAD$ }
+		}
+		1 = {
+			cm_add_bad_modifier_exact = { MODIFIER = $MOD_WORSE$ }
+		}
+	}
+	add_stability = 1
+}
+
+cm_add_good_modifier_exact = {
+	add_legitimacy = 1
+	if = {
+		limit = { has_global_flag = cm_good_effect_duration_short }
+		add_country_modifier = {
+			name = $MODIFIER$
+			duration = 180
+		}
+	}
+	if = {
+		limit = { has_global_flag = cm_good_effect_duration_medium }
+		add_country_modifier = {
+			name = $MODIFIER$
+			duration = 360
+		}
+	}
+	if = {
+		limit = { has_global_flag = cm_good_effect_duration_long }
+		add_country_modifier = {
+			name = $MODIFIER$
+			duration = 720
+		}
+	}
+	if = {
+		limit = { has_global_flag = cm_good_effect_duration_insane }
+		add_country_modifier = {
+			name = $MODIFIER$
+			duration = 1800
+		}
+	}
+}
+
+cm_add_bad_modifier_exact = {
+	if = {
+		limit = { has_global_flag = cm_bad_effect_duration_short }
+		add_country_modifier = {
+			name = $MODIFIER$
+			duration = 180
+		}
+	}
+	if = {
+		limit = { has_global_flag = cm_bad_effect_duration_medium }
+		add_country_modifier = {
+			name = $MODIFIER$
+			duration = 360
+		}
+	}
+	if = {
+		limit = { has_global_flag = cm_bad_effect_duration_long }
+		add_country_modifier = {
+			name = $MODIFIER$
+			duration = 720
+		}
+	}
+	if = {
+		limit = { has_global_flag = cm_bad_effect_duration_insane }
+		add_country_modifier = {
+			name = $MODIFIER$
+			duration = 1800
+		}
+	}
+}
+
+cm_add_good_modifier_custom = {
+	add_legitimacy = 1
+	if = {
+		limit = { has_global_flag = cm_good_effect_duration_short }
+		add_country_modifier = {
+			name = $MODIFIER$
+			duration = $DUR_SHORT$
+		}
+	}
+	if = {
+		limit = { has_global_flag = cm_good_effect_duration_medium }
+		add_country_modifier = {
+			name = $MODIFIER$
+			duration = $DUR_MEDIUM$
+		}
+	}
+	if = {
+		limit = { has_global_flag = cm_good_effect_duration_long }
+		add_country_modifier = {
+			name = $MODIFIER$
+			duration = $DUR_LONG$
+		}
+	}
+	if = {
+		limit = { has_global_flag = cm_good_effect_duration_insane }
+		add_country_modifier = {
+			name = $MODIFIER$
+			duration = $DUR_INSANE$
+		}
+	}
+}
+
+cm_add_bad_modifier_custom = {
+	if = {
+		limit = { has_global_flag = cm_bad_effect_duration_short }
+		add_country_modifier = {
+			name = $MODIFIER$
+			duration = $DUR_SHORT$
+		}
+	}
+	if = {
+		limit = { has_global_flag = cm_bad_effect_duration_medium }
+		add_country_modifier = {
+			name = $MODIFIER$
+			duration = $DUR_MEDIUM$
+		}
+	}
+	if = {
+		limit = { has_global_flag = cm_bad_effect_duration_long }
+		add_country_modifier = {
+			name = $MODIFIER$
+			duration = $DUR_LONG$
+		}
+	}
+	if = {
+		limit = { has_global_flag = cm_bad_effect_duration_insane }
+		add_country_modifier = {
+			name = $MODIFIER$
+			duration = $DUR_INSANE$
+		}
+	}
+}

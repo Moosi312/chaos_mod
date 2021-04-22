@@ -579,25 +579,97 @@ cm_choas_main_function = {
 		########   MODIFIERS    ########
 		################################
 
-		### DIPLOMACY EVENTS ###
+		### DIPLOMACY MODIFIERS ###
 
 
-		### ECONOMY EVENTS ###
-
-		
-		### GOVERNMENT EVENTS ###
+		### ECONOMY MODIFIERS ###
 
 		
-		### MILITARY EVENTS ###
+		### GOVERNMENT MODIFIERS ###
 
 		
-		### REL-TECH EVENTS ###
+		### MILITARY MODIFIERS ###
+
+		1 = { # amry mod
+			country_event = {
+				id = cm_military_mod_events.1
+			}
+		}
+		
+		1 = { # morale mod
+			country_event = {
+				id = cm_military_mod_events.2
+			}
+		}
+		
+		1 = { # discipline mod
+			country_event = {
+				id = cm_military_mod_events.3
+			}
+		}
+		
+		1 = { # tradition mod
+			country_event = {
+				id = cm_military_mod_events.4
+			}
+		}
+		
+		1 = { # army cost mod
+			country_event = {
+				id = cm_military_mod_events.5
+			}
+		}
+		
+		1 = { # navy_cost mod
+			country_event = {
+				id = cm_military_mod_events.6
+			}
+		}
+		
+		1 = { # army_pips mod
+			country_event = {
+				id = cm_military_mod_events.7
+			}
+		}
+		
+		1 = { # navy_strenght mod
+			country_event = {
+				id = cm_military_mod_events.8
+			}
+		}
+		
+		1 = { # movement mod
+			country_event = {
+				id = cm_military_mod_events.9
+			}
+		}
+		
+		1 = { # manpower mod
+			country_event = {
+				id = cm_military_mod_events.10
+			}
+		}
+		
+		1 = { # mercs mod
+			country_event = {
+				id = cm_military_mod_events.11
+			}
+		}
+		
+		1 = { # slave raids mod
+			country_event = {
+				id = cm_military_mod_events.12
+			}
+		}
+		
+		
+		### REL-TECH MODIFIERS ###
 
 		
-		### SPECIAL EVENTS ###
+		### SPECIAL MODIFIERS ###
 
 		
-		### STABILITY EVENTS ###
+		### STABILITY MODIFIERS ###
 
 	}
 }

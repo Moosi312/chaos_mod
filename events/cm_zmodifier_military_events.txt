@@ -1,0 +1,257 @@
+# Chaos mod military modifiers event
+
+namespace = cm_military_mod_events
+
+# amry mod
+country_event = {
+	id = cm_military_mod_events.1
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_mil_army_great
+			MOD_GOOD = cm_mil_army_bonus
+			MOD_BAD = cm_mil_army_malus
+			MOD_WORSE = cm_mil_army_fucked
+		}
+		add_prestige = 1
+	}
+}
+
+# morale mod
+country_event = {
+	id = cm_military_mod_events.2
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_mil_morale_great
+			MOD_GOOD = cm_mil_morale_bonus
+			MOD_BAD = cm_mil_morale_malus
+			MOD_WORSE = cm_mil_morale_fucked
+		}
+		add_prestige = 1
+	}
+}
+
+# discipline mod
+country_event = {
+	id = cm_military_mod_events.3
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_mil_discipline_great
+			MOD_GOOD = cm_mil_discipline_bonus
+			MOD_BAD = cm_mil_discipline_malus
+			MOD_WORSE = cm_mil_discipline_fucked
+		}
+		add_prestige = 1
+	}
+}
+
+# tradition mod
+country_event = {
+	id = cm_military_mod_events.4
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_mil_tradition_great
+			MOD_GOOD = cm_mil_tradition_bonus
+			MOD_BAD = cm_mil_tradition_malus
+			MOD_WORSE = cm_mil_tradition_fucked
+		}
+		add_prestige = 1
+	}
+}
+
+# army cost mod
+country_event = {
+	id = cm_military_mod_events.5
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_mil_army_cost_great
+			MOD_GOOD = cm_mil_army_cost_bonus
+			MOD_BAD = cm_mil_army_cost_malus
+			MOD_WORSE = cm_mil_army_cost_fucked
+		}
+		add_prestige = 1
+	}
+}
+
+# navy_cost mod
+country_event = {
+	id = cm_military_mod_events.6
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_mil_navy_cost_great
+			MOD_GOOD = cm_mil_navy_cost_bonus
+			MOD_BAD = cm_mil_navy_cost_malus
+			MOD_WORSE = cm_mil_navy_cost_fucked
+		}
+		add_prestige = 1
+	}
+}
+
+# army_pips mod
+country_event = {
+	id = cm_military_mod_events.7
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_mil_army_pips_great
+			MOD_GOOD = cm_mil_army_pips_bonus
+			MOD_BAD = cm_mil_army_pips_malus
+			MOD_WORSE = cm_mil_army_pips_fucked
+		}
+		add_prestige = 1
+	}
+}
+
+# navy_strenght mod
+country_event = {
+	id = cm_military_mod_events.8
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_mil_navy_strenght_great
+			MOD_GOOD = cm_mil_navy_strenght_bonus
+			MOD_BAD = cm_mil_navy_strenght_malus
+			MOD_WORSE = cm_mil_navy_strenght_fucked
+		}
+		add_prestige = 1
+	}
+}
+
+# movement mod
+country_event = {
+	id = cm_military_mod_events.9
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_mil_movement_great
+			MOD_GOOD = cm_mil_movement_bonus
+			MOD_BAD = cm_mil_movement_malus
+			MOD_WORSE = cm_mil_movement_fucked
+		}
+		add_prestige = 1
+	}
+}
+
+# manpower mod
+country_event = {
+	id = cm_military_mod_events.10
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_mil_manpower_great
+			MOD_GOOD = cm_mil_manpower_bonus
+			MOD_BAD = cm_mil_manpower_malus
+			MOD_WORSE = cm_mil_manpower_fucked
+		}
+		add_prestige = 1
+	}
+}
+
+# mercs mod
+country_event = {
+	id = cm_military_mod_events.11
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_mil_mercs_great
+			MOD_GOOD = cm_mil_mercs_bonus
+			MOD_BAD = cm_mil_mercs_malus
+			MOD_WORSE = cm_mil_mercs_fucked
+		}
+		add_prestige = 1
+	}
+}
+
+# slave raids mod
+country_event = {
+	id = cm_military_mod_events.12
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_list = {
+			1 = {
+				cm_add_good_modifier_exact = { MODIFIER = cm_mil_allow_raids_diff }
+			}
+			1 = {
+				cm_add_good_modifier_exact = { MODIFIER = cm_mil_allow_raids_rel }
+			}
+		}
+		add_prestige = 1
+	}
+}

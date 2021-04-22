@@ -31,6 +31,10 @@ country_event = {
 				NOT = {has_global_flag = cm_bad_effect_duration_insane}
 			}
 			set_global_flag = cm_bad_effect_duration_medium
+			set_variable = {
+				which = cm_bad_effect_duration
+				value = 360
+			}
 		}
 		if = {
 			limit = {
@@ -40,6 +44,10 @@ country_event = {
 				NOT = {has_global_flag = cm_good_effect_duration_insane}
 			}
 			set_global_flag = cm_good_effect_duration_medium
+			set_variable = {
+				which = cm_good_effect_duration
+				value = 360
+			}
 		}
 	}
 
@@ -181,30 +189,46 @@ country_event = {
 		clr_global_flag = cm_bad_effect_duration_long
 		clr_global_flag = cm_bad_effect_duration_insane
 		set_global_flag = cm_bad_effect_duration_short
+		set_variable = {
+			which = cm_bad_effect_duration
+			value = 180
+		}
 	}
-	option = { # short
+	option = { # medium
 		name = "cm_control_events.3.b"
 		clr_global_flag = cm_bad_effect_duration_medium
 		clr_global_flag = cm_bad_effect_duration_short
 		clr_global_flag = cm_bad_effect_duration_long
 		clr_global_flag = cm_bad_effect_duration_insane
 		set_global_flag = cm_bad_effect_duration_medium
+		set_variable = {
+			which = cm_bad_effect_duration
+			value = 360
+		}
 	}
-	option = { # short
+	option = { # long
 		name = "cm_control_events.3.c"
 		clr_global_flag = cm_bad_effect_duration_medium
 		clr_global_flag = cm_bad_effect_duration_short
 		clr_global_flag = cm_bad_effect_duration_long
 		clr_global_flag = cm_bad_effect_duration_insane
 		set_global_flag = cm_bad_effect_duration_long
+		set_variable = {
+			which = cm_bad_effect_duration
+			value = 720
+		}
 	}
-	option = { # short
+	option = { # insane
 		name = "cm_control_events.3.e"
 		clr_global_flag = cm_bad_effect_duration_medium
 		clr_global_flag = cm_bad_effect_duration_short
 		clr_global_flag = cm_bad_effect_duration_long
 		clr_global_flag = cm_bad_effect_duration_insane
 		set_global_flag = cm_bad_effect_duration_insane
+		set_variable = {
+			which = cm_bad_effect_duration
+			value = 1800
+		}
 	}
 }
 
@@ -230,6 +254,10 @@ country_event = {
 		clr_global_flag = cm_good_effect_duration_long
 		clr_global_flag = cm_good_effect_duration_insane
 		set_global_flag = cm_good_effect_duration_short
+		set_variable = {
+			which = cm_good_effect_duration
+			value = 180
+		}
 	}
 	option = { # short
 		name = "cm_control_events.4.b"
@@ -238,6 +266,10 @@ country_event = {
 		clr_global_flag = cm_good_effect_duration_long
 		clr_global_flag = cm_good_effect_duration_insane
 		set_global_flag = cm_good_effect_duration_medium
+		set_variable = {
+			which = cm_good_effect_duration
+			value = 360
+		}
 	}
 	option = { # short
 		name = "cm_control_events.4.c"
@@ -246,6 +278,10 @@ country_event = {
 		clr_global_flag = cm_good_effect_duration_long
 		clr_global_flag = cm_good_effect_duration_insane
 		set_global_flag = cm_good_effect_duration_long
+		set_variable = {
+			which = cm_good_effect_duration
+			value = 720
+		}
 	}
 	option = { # short
 		name = "cm_control_events.4.e"
@@ -254,6 +290,10 @@ country_event = {
 		clr_global_flag = cm_good_effect_duration_long
 		clr_global_flag = cm_good_effect_duration_insane
 		set_global_flag = cm_good_effect_duration_insane
+		set_variable = {
+			which = cm_good_effect_duration
+			value = 1800
+		}
 	}
 }
 
@@ -326,6 +366,7 @@ country_event = {
 	id = cm_control_events.50
 	title = "cm_control_events.50.t"
 	desc = "cm_control_events.50.d"
+	picture = CHAOS_ELMO_eventPicture
 
 	is_triggered_only = yes
 
@@ -338,6 +379,7 @@ country_event = {
 	id = cm_control_events.51
 	title = "cm_control_events.51.t"
 	desc = "cm_control_events.51.d"
+	picture = CHAOS_ELMO_eventPicture
 
 	is_triggered_only = yes
 
@@ -350,6 +392,7 @@ country_event = {
 	id = cm_control_events.100
 	title = "cm_control_events.100.t"
 	desc = "cm_control_events.100.d"
+	picture = CHAOS_ELMO_eventPicture
 
 	is_triggered_only = yes
 

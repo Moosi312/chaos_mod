@@ -4,6 +4,8 @@
  chaos_mod_event_desc: "Event desc TODO"
  chaos_mod_event_more: "Maybe more?"
  cm_event_frequency: "Days between chaos events"
+ cm_good_effect_duration: "Average good effect duration"
+ cm_bad_effect_duration: "Average bad effect duration"
  TOOLTIP_CHAOS_MOD_EVENT: "Chaos mod event"
  TOOLTIP_CHAOS_MOD_PLAYER_INFO: "Other players will be informed of this decision"
  cm_control_events.1.t: "Welcome to the chaos mod"
