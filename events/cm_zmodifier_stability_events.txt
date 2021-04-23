@@ -1,0 +1,103 @@
+# Chaos mod stability modifiers event
+
+namespace = cm_stability_mod_events
+
+# unrest
+country_event = {
+	id = cm_stability_mod_events.1
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_stab_unrest_great
+			MOD_GOOD = cm_stab_unrest_bonus
+			MOD_BAD = cm_stab_unrest_malus
+			MOD_WORSE = cm_stab_unrest_fucked
+		}
+	}
+}
+
+# culture
+country_event = {
+	id = cm_stability_mod_events.2
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_stab_culture_great
+			MOD_GOOD = cm_stab_culture_bonus
+			MOD_BAD = cm_stab_culture_malus
+			MOD_WORSE = cm_stab_culture_fucked
+		}
+	}
+}
+
+# stability
+country_event = {
+	id = cm_stability_mod_events.3
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_stab_stab_great
+			MOD_GOOD = cm_stab_stab_bonus
+			MOD_BAD = cm_stab_stab_malus
+			MOD_WORSE = cm_stab_stab_fucked
+		}
+	}
+}
+
+# autonomy
+country_event = {
+	id = cm_stability_mod_events.4
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_stab_autonomy_great
+			MOD_GOOD = cm_stab_autonomy_bonus
+			MOD_BAD = cm_stab_autonomy_malus
+			MOD_WORSE = cm_stab_autonomy_fucked
+		}
+	}
+}
+
+# seperatism
+country_event = {
+	id = cm_stability_mod_events.5
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_stab_seperatism_great
+			MOD_GOOD = cm_stab_seperatism_bonus
+			MOD_BAD = cm_stab_seperatism_malus
+			MOD_WORSE = cm_stab_seperatism_fucked
+		}
+	}
+}

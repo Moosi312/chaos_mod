@@ -1,0 +1,441 @@
+
+cm_gov_prestige_great = {
+	prestige = 10
+}
+cm_gov_prestige_bonus = {
+	prestige = 5
+}
+cm_gov_prestige_malus = {
+	prestige = -5
+}
+cm_gov_prestige_fucked = {
+	prestige = -10
+}
+
+cm_gov_legitimacy_great = {
+	legitimacy = 10
+	horde_unity = 10
+	meritocracy = 10
+	devotion = 10
+	republican_tradition = 10
+}
+cm_gov_legitimacy_bonus = {
+	legitimacy = 5
+	horde_unity = 5
+	meritocracy = 5
+	devotion = 5
+	republican_tradition = 5
+}
+cm_gov_legitimacy_malus = {
+	legitimacy = -5
+	horde_unity = -5
+	meritocracy = -5
+	devotion = -5
+	republican_tradition = -5
+}
+cm_gov_legitimacy_fucked = {
+	legitimacy = -10
+	horde_unity = -10
+	meritocracy = -10
+	devotion = -10
+	republican_tradition = -10
+}
+
+cm_gov_corruption_great = {
+	yearly_corruption = 10
+}
+cm_gov_corruption_bonus = {
+	yearly_corruption = 5
+}
+cm_gov_corruption_malus = {
+	yearly_corruption = -5
+}
+cm_gov_corruption_fucked = {
+	yearly_corruption = -10
+}
+
+cm_gov_advisor_great = {
+	advisor_cost = -1
+	advisor_pool = 5
+}
+cm_gov_advisor_bonus = {
+	advisor_cost = -0.5
+	advisor_pool = 2
+}
+cm_gov_advisor_malus = {
+	advisor_cost = 0.5
+	advisor_pool = -2
+}
+cm_gov_advisor_fucked = {
+	advisor_cost = 1
+	advisor_pool = -5
+}
+
+cm_gov_lifespan_great = {
+	monarch_lifespan = 0.5
+}
+cm_gov_lifespan_bonus = {
+	monarch_lifespan = 0.2
+}
+cm_gov_lifespan_malus = {
+	monarch_lifespan = -0.2
+}
+cm_gov_lifespan_fucked = {
+	monarch_lifespan = -0.5
+}
+
+cm_gov_monarch_power_great = {
+	monarch_admin_power = 5
+	monarch_diplomatic_power = 5
+	monarch_military_power = 5
+}
+cm_gov_monarch_power_bonus = {
+	monarch_admin_power = 2
+	monarch_diplomatic_power = 2
+	monarch_military_power = 2
+}
+cm_gov_monarch_power_malus = {
+	monarch_admin_power = -2
+	monarch_diplomatic_power = -2
+	monarch_military_power = -2
+}
+cm_gov_monarch_power_fucked = {
+	monarch_admin_power = -5
+	monarch_diplomatic_power = -5
+	monarch_military_power = -5
+}
+
+cm_gov_absolutism_great = {
+	max_absolutism  = 50
+	yearly_absolutism = 5
+}
+cm_gov_absolutism_bonus = {
+	max_absolutism = 20
+	yearly_absolutism = 2
+}
+cm_gov_absolutism_malus = {
+	max_absolutism = -20
+	yearly_absolutism = -2
+}
+cm_gov_absolutism_fucked = {
+	max_absolutism = -50
+	yearly_absolutism = -5
+}
+
+cm_gov_republic_great = {
+	reelection_cost = -0.5
+	candidate_random_bonus = 4
+}
+cm_gov_republic_bonus = {
+	reelection_cost = -0.2
+	candidate_random_bonus = 2
+}
+cm_gov_republic_malus = {
+	reelection_cost = 0.5
+	candidate_random_bonus = -2
+}
+cm_gov_republic_fucked = {
+	reelection_cost = 1
+	candidate_random_bonus = -4
+}
+
+cm_gov_imperial_great = {
+	imperial_authority = 0.1
+	imperial_mandate = 0.2
+}
+cm_gov_imperial_bonus = {
+	imperial_authority = 0.05
+	imperial_mandate = 0.1
+}
+cm_gov_imperial_malus = {
+	imperial_authority = -0.05
+	imperial_mandate = -0.1
+}
+cm_gov_imperial_fucked = {
+	imperial_authority = -0.1
+	imperial_mandate = -0.2
+}
+
+cm_gov_gov_cap_great = {
+	governing_capacity = 200
+	governing_capacity_modifier = 1
+}
+cm_gov_gov_cap_bonus = {
+	governing_capacity = 100
+	governing_capacity_modifier = 0.5
+}
+cm_gov_gov_cap_malus = {
+	governing_capacity = -100
+	governing_capacity_modifier = -0.5
+}
+cm_gov_gov_cap_fucked = {
+	governing_capacity = -200
+	governing_capacity_modifier = -1
+}
+
+cm_gov_gov_cost_great = {
+	state_governing_cost = -0.5
+	trade_company_governing_cost = -0.5
+}
+cm_gov_gov_cost_bonus = {
+	state_governing_cost = -0.2
+	trade_company_governing_cost = -0.2
+}
+cm_gov_gov_cost_malus = {
+	state_governing_cost = 0.5
+	trade_company_governing_cost = 0.5
+}
+cm_gov_gov_cost_fucked = {
+	state_governing_cost = 1
+	trade_company_governing_cost = 1
+}
+
+cm_gov_estate_loyalty_great = {
+	church_loyalty_modifier = 0.5
+
+	brahmins_muslim_loyalty_modifier = 0.5
+	brahmins_hindu_loyalty_modifier = 0.5
+	brahmins_other_loyalty_modifier = 0.5
+
+	burghers_loyalty_modifier = 0.5
+
+	maratha_loyalty_modifier = 0.5
+	maratha_muslim_loyalty_modifier = 0.5
+	maratha_exclusive_loyalty_modifier = 0.5
+
+	nobles_loyalty_modifier = 0.5
+	nobles_exclusive_loyalty_modifier = 0.5
+
+	vaisyas_loyalty_modifier = 0.5
+	vaisyas_non_muslim_loyalty_modifier = 0.5
+
+	cossacks_loyalty_modifier = 0.5
+
+	nomadic_tribes_loyalty_modifier = 0.5
+
+	dhimmi_loyalty_modifier = 0.5
+
+	jains_loyalty_modifier = 0.5
+
+	rajput_loyalty_modifier = 0.5
+	rajput_muslim_loyalty_modifier = 0.5
+	rajput_exclusive_loyalty_modifier = 0.5
+}
+cm_gov_estate_loyalty_bonus = {
+	church_loyalty_modifier = 0.2
+
+	brahmins_muslim_loyalty_modifier = 0.2
+	brahmins_hindu_loyalty_modifier = 0.2
+	brahmins_other_loyalty_modifier = 0.2
+
+	burghers_loyalty_modifier = 0.2
+
+	maratha_loyalty_modifier = 0.2
+	maratha_muslim_loyalty_modifier = 0.2
+	maratha_exclusive_loyalty_modifier = 0.2
+
+	nobles_loyalty_modifier = 0.2
+	nobles_exclusive_loyalty_modifier = 0.2
+
+	vaisyas_loyalty_modifier = 0.2
+	vaisyas_non_muslim_loyalty_modifier = 0.2
+
+	cossacks_loyalty_modifier = 0.2
+
+	nomadic_tribes_loyalty_modifier = 0.2
+
+	dhimmi_loyalty_modifier = 0.2
+
+	jains_loyalty_modifier = 0.2
+
+	rajput_loyalty_modifier = 0.2
+	rajput_muslim_loyalty_modifier = 0.2
+	rajput_exclusive_loyalty_modifier = 0.2
+}
+cm_gov_estate_loyalty_malus = {
+	church_loyalty_modifier = -0.2
+
+	brahmins_muslim_loyalty_modifier = -0.2
+	brahmins_hindu_loyalty_modifier = -0.2
+	brahmins_other_loyalty_modifier = -0.2
+
+	burghers_loyalty_modifier = -0.2
+
+	maratha_loyalty_modifier = -0.2
+	maratha_muslim_loyalty_modifier = -0.2
+	maratha_exclusive_loyalty_modifier = -0.2
+
+	nobles_loyalty_modifier = -0.2
+	nobles_exclusive_loyalty_modifier = -0.2
+
+	vaisyas_loyalty_modifier = -0.2
+	vaisyas_non_muslim_loyalty_modifier = -0.2
+
+	cossacks_loyalty_modifier = -0.2
+
+	nomadic_tribes_loyalty_modifier = -0.2
+
+	dhimmi_loyalty_modifier = -0.2
+
+	jains_loyalty_modifier = -0.2
+
+	rajput_loyalty_modifier = -0.2
+	rajput_muslim_loyalty_modifier = -0.2
+	rajput_exclusive_loyalty_modifier = -0.2
+}
+cm_gov_estate_loyalty_fucked = {
+	church_loyalty_modifier = -0.5
+
+	brahmins_muslim_loyalty_modifier = -0.5
+	brahmins_hindu_loyalty_modifier = -0.5
+	brahmins_other_loyalty_modifier = -0.5
+
+	burghers_loyalty_modifier = -0.5
+
+	maratha_loyalty_modifier = -0.5
+	maratha_muslim_loyalty_modifier = -0.5
+	maratha_exclusive_loyalty_modifier = -0.5
+
+	nobles_loyalty_modifier = -0.5
+	nobles_exclusive_loyalty_modifier = -0.5
+
+	vaisyas_loyalty_modifier = -0.5
+	vaisyas_non_muslim_loyalty_modifier = -0.5
+
+	cossacks_loyalty_modifier = -0.5
+
+	nomadic_tribes_loyalty_modifier = -0.5
+
+	dhimmi_loyalty_modifier = -0.5
+
+	jains_loyalty_modifier = -0.5
+
+	rajput_loyalty_modifier = -0.5
+	rajput_muslim_loyalty_modifier = -0.5
+	rajput_exclusive_loyalty_modifier = -0.5
+}
+
+cm_gov_estate_influence_great = {
+	church_influence_modifier = 0.5
+	
+	brahmins_muslim_influence_modifier = 0.5
+	brahmins_hindu_influence_modifier = 0.5
+	brahmins_other_influence_modifier = 0.5
+
+	burghers_influence_modifier = 0.5
+
+	maratha_influence_modifier = 0.5
+	maratha_muslim_influence_modifier = 0.5
+	maratha_exclusive_influence_modifier = 0.5
+
+	nobles_influence_modifier = 0.5
+	nobles_exclusive_influence_modifier = 0.5
+
+	vaisyas_influence_modifier = 0.5
+	vaisyas_non_muslim_influence_modifier = 0.5
+
+	cossacks_influence_modifier = 0.5
+
+	nomadic_tribes_influence_modifier = 0.5
+
+	dhimmi_influence_modifier = 0.5
+
+	jains_influence_modifier = 0.5
+
+	rajput_influence_modifier = 0.5
+	rajput_muslim_influence_modifier = 0.5
+	rajput_exclusive_influence_modifier = 0.5
+}
+cm_gov_estate_influence_bonus = {
+	church_influence_modifier = 0.2
+	
+	brahmins_muslim_influence_modifier = 0.2
+	brahmins_hindu_influence_modifier = 0.2
+	brahmins_other_influence_modifier = 0.2
+
+	burghers_influence_modifier = 0.2
+
+	maratha_influence_modifier = 0.2
+	maratha_muslim_influence_modifier = 0.2
+	maratha_exclusive_influence_modifier = 0.2
+
+	nobles_influence_modifier = 0.2
+	nobles_exclusive_influence_modifier = 0.2
+
+	vaisyas_influence_modifier = 0.2
+	vaisyas_non_muslim_influence_modifier = 0.2
+
+	cossacks_influence_modifier = 0.2
+
+	nomadic_tribes_influence_modifier = 0.2
+
+	dhimmi_influence_modifier = 0.2
+
+	jains_influence_modifier = 0.2
+
+	rajput_influence_modifier = 0.2
+	rajput_muslim_influence_modifier = 0.2
+	rajput_exclusive_influence_modifier = 0.2
+}
+cm_gov_estate_influence_malus = {
+	church_influence_modifier = -0.2
+	
+	brahmins_muslim_influence_modifier = -0.2
+	brahmins_hindu_influence_modifier = -0.2
+	brahmins_other_influence_modifier = -0.2
+
+	burghers_influence_modifier = -0.2
+
+	maratha_influence_modifier = -0.2
+	maratha_muslim_influence_modifier = -0.2
+	maratha_exclusive_influence_modifier = -0.2
+
+	nobles_influence_modifier = -0.2
+	nobles_exclusive_influence_modifier = -0.2
+
+	vaisyas_influence_modifier = -0.2
+	vaisyas_non_muslim_influence_modifier = -0.2
+
+	cossacks_influence_modifier = -0.2
+
+	nomadic_tribes_influence_modifier = -0.2
+
+	dhimmi_influence_modifier = -0.2
+
+	jains_influence_modifier = -0.2
+
+	rajput_influence_modifier = -0.2
+	rajput_muslim_influence_modifier = -0.2
+	rajput_exclusive_influence_modifier = -0.2
+}
+cm_gov_estate_influence_fucked = {
+	church_influence_modifier = -0.5
+	
+	brahmins_muslim_influence_modifier = -0.5
+	brahmins_hindu_influence_modifier = -0.5
+	brahmins_other_influence_modifier = -0.5
+
+	burghers_influence_modifier = -0.5
+
+	maratha_influence_modifier = -0.5
+	maratha_muslim_influence_modifier = -0.5
+	maratha_exclusive_influence_modifier = -0.5
+
+	nobles_influence_modifier = -0.5
+	nobles_exclusive_influence_modifier = -0.5
+
+	vaisyas_influence_modifier = -0.5
+	vaisyas_non_muslim_influence_modifier = -0.5
+
+	cossacks_influence_modifier = -0.5
+
+	nomadic_tribes_influence_modifier = -0.5
+
+	dhimmi_influence_modifier = -0.5
+
+	jains_influence_modifier = -0.5
+
+	rajput_influence_modifier = -0.5
+	rajput_muslim_influence_modifier = -0.5
+	rajput_exclusive_influence_modifier = -0.5
+}

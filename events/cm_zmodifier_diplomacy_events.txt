@@ -1,0 +1,103 @@
+# Chaos mod diplomacy modifiers event
+
+namespace = cm_diplomacy_mod_events
+
+# diplomats
+country_event = {
+	id = cm_diplomacy_mod_events.1
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_dip_diplomats_great
+			MOD_GOOD = cm_dip_diplomats_bonus
+			MOD_BAD = cm_dip_diplomats_malus
+			MOD_WORSE = cm_dip_diplomats_fucked
+		}
+	}
+}
+
+# reputation
+country_event = {
+	id = cm_diplomacy_mod_events.2
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_dip_rep_great
+			MOD_GOOD = cm_dip_rep_bonus
+			MOD_BAD = cm_dip_rep_malus
+			MOD_WORSE = cm_dip_rep_fucked
+		}
+	}
+}
+
+# relations
+country_event = {
+	id = cm_diplomacy_mod_events.3
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_dip_rel_great
+			MOD_GOOD = cm_dip_rel_bonus
+			MOD_BAD = cm_dip_rel_malus
+			MOD_WORSE = cm_dip_rel_fucked
+		}
+	}
+}
+
+# ae
+country_event = {
+	id = cm_diplomacy_mod_events.4
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_dip_ae_great
+			MOD_GOOD = cm_dip_ae_bonus
+			MOD_BAD = cm_dip_ae_malus
+			MOD_WORSE = cm_dip_ae_fucked
+		}
+	}
+}
+
+# vassals
+country_event = {
+	id = cm_diplomacy_mod_events.5
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_dip_vassals_great
+			MOD_GOOD = cm_dip_vassals_bonus
+			MOD_BAD = cm_dip_vassals_malus
+			MOD_WORSE = cm_dip_vassals_fucked
+		}
+	}
+}

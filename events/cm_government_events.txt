@@ -392,3 +392,39 @@ country_event = {
 		}
 	}
 }
+
+# add estate loyalty
+country_event = {
+	id = cm_government_events.19
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_estate_loyalty = {
+			estate = all
+			loyalty = 50
+		}
+	}
+}
+
+# remove estate loyalty
+country_event = {
+	id = cm_government_events.20
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_estate_loyalty = {
+			estate = all
+			loyalty = -50
+		}
+	}
+}

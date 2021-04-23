@@ -173,8 +173,38 @@ country_event = {
 			chance = 75
 			
 			country_event = {
+				id = cm_diplomacy_events.8001
+				tooltip = "chaos_mod_event_more"
+			}
+		}
+		
+	}
+}
+
+# add serveral claims abroad __ second event
+country_event = {
+	id = cm_diplomacy_events.8001
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_province = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+				NOT = { is_claim = ROOT }
+			}
+			add_claim = ROOT
+		}
+		random = {
+			chance = 75
+			
+			country_event = {
 				id = cm_diplomacy_events.8
-				days = 1
 				tooltip = "chaos_mod_event_more"
 			}
 		}

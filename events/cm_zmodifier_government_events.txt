@@ -1,0 +1,263 @@
+# Chaos mod government modifiers event
+
+namespace = cm_government_mod_events
+
+# prestige
+country_event = {
+	id = cm_government_mod_events.1
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_gov_prestige_great
+			MOD_GOOD = cm_gov_prestige_bonus
+			MOD_BAD = cm_gov_prestige_malus
+			MOD_WORSE = cm_gov_prestige_fucked
+		}
+	}
+}
+
+# legitimacy
+country_event = {
+	id = cm_government_mod_events.2
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_gov_legitimacy_great
+			MOD_GOOD = cm_gov_legitimacy_bonus
+			MOD_BAD = cm_gov_legitimacy_malus
+			MOD_WORSE = cm_gov_legitimacy_fucked
+		}
+	}
+}
+
+# corruption
+country_event = {
+	id = cm_government_mod_events.3
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_gov_corruption_great
+			MOD_GOOD = cm_gov_corruption_bonus
+			MOD_BAD = cm_gov_corruption_malus
+			MOD_WORSE = cm_gov_corruption_fucked
+		}
+	}
+}
+
+# advisor
+country_event = {
+	id = cm_government_mod_events.4
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_gov_advisor_great
+			MOD_GOOD = cm_gov_advisor_bonus
+			MOD_BAD = cm_gov_advisor_malus
+			MOD_WORSE = cm_gov_advisor_fucked
+		}
+	}
+}
+
+# lifespan
+country_event = {
+	id = cm_government_mod_events.5
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_gov_lifespan_great
+			MOD_GOOD = cm_gov_lifespan_bonus
+			MOD_BAD = cm_gov_lifespan_malus
+			MOD_WORSE = cm_gov_lifespan_fucked
+		}
+	}
+}
+
+# monarch power
+country_event = {
+	id = cm_government_mod_events.6
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_gov_monarch_power_great
+			MOD_GOOD = cm_gov_monarch_power_bonus
+			MOD_BAD = cm_gov_monarch_power_malus
+			MOD_WORSE = cm_gov_monarch_power_fucked
+		}
+	}
+}
+
+# absolutism
+country_event = {
+	id = cm_government_mod_events.7
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_gov_absolutism_great
+			MOD_GOOD = cm_gov_absolutism_bonus
+			MOD_BAD = cm_gov_absolutism_malus
+			MOD_WORSE = cm_gov_absolutism_fucked
+		}
+	}
+}
+
+# republic
+country_event = {
+	id = cm_government_mod_events.8
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_gov_republic_great
+			MOD_GOOD = cm_gov_republic_bonus
+			MOD_BAD = cm_gov_republic_malus
+			MOD_WORSE = cm_gov_republic_fucked
+		}
+	}
+}
+
+# imperial
+country_event = {
+	id = cm_government_mod_events.9
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_gov_imperial_great
+			MOD_GOOD = cm_gov_imperial_bonus
+			MOD_BAD = cm_gov_imperial_malus
+			MOD_WORSE = cm_gov_imperial_fucked
+		}
+	}
+}
+
+# gov cap
+country_event = {
+	id = cm_government_mod_events.10
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_gov_gov_cap_great
+			MOD_GOOD = cm_gov_gov_cap_bonus
+			MOD_BAD = cm_gov_gov_cap_malus
+			MOD_WORSE = cm_gov_gov_cap_fucked
+		}
+	}
+}
+
+# gov cost
+country_event = {
+	id = cm_government_mod_events.11
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_gov_gov_cost_great
+			MOD_GOOD = cm_gov_gov_cost_bonus
+			MOD_BAD = cm_gov_gov_cost_malus
+			MOD_WORSE = cm_gov_gov_cost_fucked
+		}
+	}
+}
+
+# estate loyalty
+country_event = {
+	id = cm_government_mod_events.12
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_gov_estate_loyalty_great
+			MOD_GOOD = cm_gov_estate_loyalty_bonus
+			MOD_BAD = cm_gov_estate_loyalty_malus
+			MOD_WORSE = cm_gov_estate_loyalty_fucked
+		}
+	}
+}
+
+# estate influence
+country_event = {
+	id = cm_government_mod_events.13
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_gov_estate_influence_great
+			MOD_GOOD = cm_gov_estate_influence_bonus
+			MOD_BAD = cm_gov_estate_influence_malus
+			MOD_WORSE = cm_gov_estate_influence_fucked
+		}
+	}
+}

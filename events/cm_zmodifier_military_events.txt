@@ -19,7 +19,6 @@ country_event = {
 			MOD_BAD = cm_mil_army_malus
 			MOD_WORSE = cm_mil_army_fucked
 		}
-		add_prestige = 1
 	}
 }
 

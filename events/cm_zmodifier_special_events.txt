@@ -1,0 +1,43 @@
+# Chaos mod special modifiers event
+
+namespace = cm_special_mod_events
+
+# colonists
+country_event = {
+	id = cm_special_mod_events.1
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_spec_colonists_great
+			MOD_GOOD = cm_spec_colonists_bonus
+			MOD_BAD = cm_spec_colonists_malus
+			MOD_WORSE = cm_spec_colonists_fucked
+		}
+	}
+}
+
+# colonial growth
+country_event = {
+	id = cm_special_mod_events.2
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_spec_col_growth_great
+			MOD_GOOD = cm_spec_col_growth_bonus
+			MOD_BAD = cm_spec_col_growth_malus
+			MOD_WORSE = cm_spec_col_growth_fucked
+		}
+	}
+}

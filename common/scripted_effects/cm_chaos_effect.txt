@@ -581,12 +581,193 @@ cm_choas_main_function = {
 
 		### DIPLOMACY MODIFIERS ###
 
+		1 = { # diplomats
+			country_event = {
+				id = cm_diplomacy_mod_events.1
+			}
+		}
+		
+		1 = { # reputation
+			country_event = {
+				id = cm_diplomacy_mod_events.2
+			}
+		}
+		
+		1 = { # relations
+			country_event = {
+				id = cm_diplomacy_mod_events.3
+			}
+		}
+		
+		1 = { # ae
+			country_event = {
+				id = cm_diplomacy_mod_events.4
+			}
+		}
+		
+		1 = { # vassals
+			country_event = {
+				id = cm_diplomacy_mod_events.5
+			}
+		}
+		
 
 		### ECONOMY MODIFIERS ###
 
+		1 = { # tax
+			country_event = {
+				id = cm_economy_mod_events.1
+			}
+		}
+		
+		1 = { # production
+			country_event = {
+				id = cm_economy_mod_events.2
+			}
+		}
+		
+		1 = { # dev
+			country_event = {
+				id = cm_economy_mod_events.3
+			}
+		}
+		
+		1 = { # building
+			country_event = {
+				id = cm_economy_mod_events.4
+			}
+		}
+		
+		1 = { # admin eff
+			country_event = {
+				id = cm_economy_mod_events.5
+			}
+		}
+		
+		1 = { # core creation
+			country_event = {
+				id = cm_economy_mod_events.6
+			}
+		}
+		
+		1 = { # trade
+			country_event = {
+				id = cm_economy_mod_events.7
+			}
+		}
+		
+		1 = { # merchants
+			country_event = {
+				id = cm_economy_mod_events.8
+			}
+		}
+		
+		1 = { # trade eff
+			country_event = {
+				id = cm_economy_mod_events.9
+			}
+		}
+		
+		1 = { # trade ships
+			country_event = {
+				id = cm_economy_mod_events.10
+			}
+		}
+		
 		
 		### GOVERNMENT MODIFIERS ###
 
+		1 = { # prestige
+			country_event = {
+				id = cm_government_mod_events.1
+			}
+		}
+		
+		1 = { # legitimacy
+			country_event = {
+				id = cm_government_mod_events.2
+			}
+		}
+		
+		1 = { # corruption
+			country_event = {
+				id = cm_government_mod_events.3
+			}
+		}
+		
+		1 = { # advisor
+			country_event = {
+				id = cm_government_mod_events.4
+			}
+		}
+		
+		1 = { # lifespan
+			country_event = {
+				id = cm_government_mod_events.5
+			}
+		}
+		
+		1 = { # country monarch power
+			country_event = {
+				id = cm_government_mod_events.6
+			}
+		}
+		
+		1 = { # absolutism
+			country_event = {
+				id = cm_government_mod_events.7
+			}
+		}
+		
+		1 = { # republic
+			country_event = {
+				id = cm_government_mod_events.8
+			}
+			modifier = {
+				factor = 0
+				NOT = { government = republic }
+			}
+		}
+		
+		1 = { # imperial
+			country_event = {
+				id = cm_government_mod_events.9
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						is_emperor = yes
+						is_emperor_of_china = yes
+					}
+				}
+			}
+		}
+		
+		1 = { # gov cap
+			country_event = {
+				id = cm_government_mod_events.10
+			}
+		}
+		
+		1 = { # gov cost
+			country_event = {
+				id = cm_government_mod_events.11
+			}
+		}
+		
+		1 = { # estate loyalty
+			country_event = {
+				id = cm_government_mod_events.12
+			}
+		}
+		
+		1 = { # estate influence
+			country_event = {
+				id = cm_government_mod_events.13
+			}
+		}
+		
 		
 		### MILITARY MODIFIERS ###
 
@@ -665,11 +846,119 @@ cm_choas_main_function = {
 		
 		### REL-TECH MODIFIERS ###
 
+		1 = { # tech
+			country_event = {
+				id = cm_rel_tech_mod_events.1
+			}
+		}
+		
+		1 = { # ideas
+			country_event = {
+				id = cm_rel_tech_mod_events.2
+			}
+		}
+		
+		1 = { # institution
+			country_event = {
+				id = cm_rel_tech_mod_events.3
+			}
+		}
+		
+		1 = { # policies
+			country_event = {
+				id = cm_rel_tech_mod_events.4
+			}
+		}
+		
+		1 = { # country monarch power
+			country_event = {
+				id = cm_rel_tech_mod_events.5
+			}
+		}
+		
+		1 = { # missionary
+			country_event = {
+				id = cm_rel_tech_mod_events.6
+			}
+		}
+		
+		1 = { # rel unity
+			country_event = {
+				id = cm_rel_tech_mod_events.7
+			}
+		}
+		
+		1 = { # tolerance true faith
+			country_event = {
+				id = cm_rel_tech_mod_events.8
+			}
+		}
+		
+		1 = { # rel tolerance
+			country_event = {
+				id = cm_rel_tech_mod_events.9
+			}
+		}
+		
+		1 = { # church poweres
+			country_event = {
+				id = cm_rel_tech_mod_events.10
+			}
+		}
+		
+		1 = { # crusader
+			country_event = {
+				id = cm_rel_tech_mod_events.11
+			}
+		}
+		
 		
 		### SPECIAL MODIFIERS ###
 
+		1 = { # colonists
+			country_event = {
+				id = cm_special_mod_events.1
+			}
+		}
+		
+		1 = { # colonial growth
+			country_event = {
+				id = cm_special_mod_events.2
+			}
+		}
+		
 		
 		### STABILITY MODIFIERS ###
 
+		1 = { # unrest
+			country_event = {
+				id = cm_rel_tech_mod_events.1
+			}
+		}
+		
+		1 = { # culture
+			country_event = {
+				id = cm_rel_tech_mod_events.2
+			}
+		}
+		
+		1 = { # stability
+			country_event = {
+				id = cm_rel_tech_mod_events.3
+			}
+		}
+		
+		1 = { # autonomy
+			country_event = {
+				id = cm_rel_tech_mod_events.4
+			}
+		}
+		
+		1 = { # seperatism
+			country_event = {
+				id = cm_rel_tech_mod_events.5
+			}
+		}
+		
 	}
 }

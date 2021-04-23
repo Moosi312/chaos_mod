@@ -1,0 +1,227 @@
+
+cm_rt_tech_cost_great = {
+	technology_cost = -0.5
+	innovativeness_gain = 1
+}
+cm_rt_tech_cost_bonus = {
+	technology_cost = -0.2
+	innovativeness_gain = 0.5
+}
+cm_rt_tech_cost_malus = {
+	technology_cost = 0.5
+	innovativeness_gain = -0.5
+}
+cm_rt_tech_cost_fucked = {
+	technology_cost = 1
+	innovativeness_gain = -1
+}
+
+cm_rt_idea_cost_great = {
+	idea_cost = -0.5
+}
+cm_rt_idea_cost_bonus = {
+	idea_cost = -0.2
+}
+cm_rt_idea_cost_malus = {
+	idea_cost = 0.5
+}
+cm_rt_idea_cost_fucked = {
+	idea_cost = 1
+}
+
+cm_rt_institution_great = {
+	global_institution_spread = 1
+	institution_spread_from_true_faith = 1
+	embracement_cost = -0.5
+}
+cm_rt_institution_bonus = {
+	global_institution_spread = 0.5
+	institution_spread_from_true_faith = 0.5
+	embracement_cost = -0.2
+}
+cm_rt_institution_malus = {
+	global_institution_spread = -0.5
+	institution_spread_from_true_faith = -0.5
+	embracement_cost = 0.5
+}
+cm_rt_institution_fucked = {
+	global_institution_spread = -1
+	institution_spread_from_true_faith = -1
+	embracement_cost = 1
+}
+
+cm_rt_policies_great = {
+	free_adm_policy = 2
+	free_dip_policy = 2
+	free_mil_policy = 2
+	possible_adm_policy = 2
+	possible_dip_policy = 2
+	possible_mil_policy = 2
+}
+cm_rt_policies_bonus = {
+	free_adm_policy = 1
+	free_dip_policy = 1
+	free_mil_policy = 1
+	possible_adm_policy = 1
+	possible_dip_policy = 1
+	possible_mil_policy = 1
+}
+cm_rt_policies_malus = {
+	free_adm_policy = -1
+	free_dip_policy = -1
+	free_mil_policy = -1
+	possible_adm_policy = -1
+	possible_dip_policy = -1
+	possible_mil_policy = -1
+}
+cm_rt_policies_fucked = {
+	free_adm_policy = -2
+	free_dip_policy = -2
+	free_mil_policy = -2
+	possible_adm_policy = -2
+	possible_dip_policy = -2
+	possible_mil_policy = -2
+}
+
+cm_rt_monarch_power_great = {
+	country_admin_power = 5
+	country_diplomatic_power = 5
+	country_military_power = 5
+}
+cm_rt_monarch_power_bonus = {
+	country_admin_power = 2
+	country_diplomatic_power = 2
+	country_military_power = 2
+}
+cm_rt_monarch_power_malus = {
+	country_admin_power = -2
+	country_diplomatic_power = -2
+	country_military_power = -2
+}
+cm_rt_monarch_power_fucked = {
+	country_admin_power = -5
+	country_diplomatic_power = -5
+	country_military_power = -5
+}
+
+cm_rt_missionary_great = {
+	missionaries = 5
+	global_missionary_strength = 0.1
+	global_heretic_missionary_strength = 0.1
+}
+cm_rt_missionary_bonus = {
+	missionaries = 2
+	global_missionary_strength = 0.05
+	global_heretic_missionary_strength = 0.05
+}
+cm_rt_missionary_malus = {
+	missionaries = -2
+	global_missionary_strength = -0.05
+	global_heretic_missionary_strength = -0.05
+}
+cm_rt_missionary_fucked = {
+	missionaries = -5
+	global_missionary_strength = -0.1
+	global_heretic_missionary_strength = -0.1
+}
+
+cm_rt_unity_great = {
+	religious_unity = 0.5
+}
+cm_rt_unity_bonus = {
+	religious_unity = 0.2
+}
+cm_rt_unity_malus = {
+	religious_unity = -0.2
+}
+cm_rt_unity_fucked = {
+	religious_unity = -0.5
+}
+
+cm_rt_tol_own_great = {
+	tolerance_own = 10
+}
+cm_rt_tol_own_bonus = {
+	tolerance_own = 5
+}
+cm_rt_tol_own_malus = {
+	tolerance_own = -5
+}
+cm_rt_tol_own_fucked = {
+	tolerance_own = -10
+}
+
+cm_rt_tol_faith_great = {
+	tolerance_heretic = 10
+	tolerance_heathen = 10
+}
+cm_rt_tol_faith_bonus = {
+	tolerance_heretic = 5
+	tolerance_heathen = 5
+}
+cm_rt_tol_faith_malus = {
+	tolerance_heretic = -5
+	tolerance_heathen = -5
+}
+cm_rt_tol_faith_fucked = {
+	tolerance_heretic = -10
+	tolerance_heathen = -10
+}
+
+cm_rt_church_power_great = {
+	papal_influence = 10
+	church_power_modifier = 1
+	monthly_fervor_increase = 10
+	yearly_harmony = 10
+	monthly_piety = 10
+	monthly_karma = 10
+	yearly_patriarch_authority = 0.1
+}
+cm_rt_church_power_bonus = {
+	papal_influence = 5
+	church_power_modifier = 0.5
+	monthly_fervor_increase = 5
+	yearly_harmony = 5
+	monthly_piety = 5
+	monthly_karma = 5
+	yearly_patriarch_authority = 0.05
+}
+cm_rt_church_power_malus = {
+	papal_influence = -5
+	church_power_modifier = -0.5
+	monthly_fervor_increase = -5
+	yearly_harmony = -5
+	monthly_piety = -5
+	monthly_karma = -5
+	yearly_patriarch_authority = -0.05
+}
+cm_rt_church_power_fucked = {
+	papal_influence = -10
+	church_power_modifier = -1
+	monthly_fervor_increase = -10
+	yearly_harmony = -10
+	monthly_piety = -10
+	monthly_karma = -10
+	yearly_patriarch_authority = -0.1
+}
+
+cm_rt_crusade_great = {
+	warscore_cost_vs_other_religion = -0.5
+	enforce_religion_cost = -0.5
+	cb_on_religious_enemies = yes
+}
+cm_rt_crusade_bonus = {
+	warscore_cost_vs_other_religion = -0.25
+	enforce_religion_cost = -0.25
+	cb_on_religious_enemies = yes
+}
+cm_rt_crusade_malus = {
+	warscore_cost_vs_other_religion = 0.25
+	enforce_religion_cost = 0.25
+	relation_with_heretics = -50
+}
+cm_rt_crusade_fucked = {
+	warscore_cost_vs_other_religion = 0.5
+	enforce_religion_cost = 0.5
+	relation_with_heretics = -100
+}

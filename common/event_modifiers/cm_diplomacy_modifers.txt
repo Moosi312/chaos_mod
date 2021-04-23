@@ -1,0 +1,77 @@
+
+cm_dip_diplomats_great = {
+	diplomats = 5
+	envoy_travel_time = -0.5
+}
+cm_dip_diplomats_bonus = {
+	diplomats = 2
+	envoy_travel_time = -0.2
+}
+cm_dip_diplomats_malus = {
+	diplomats = -2
+	envoy_travel_time = 0.2
+}
+cm_dip_diplomats_fucked = {
+	diplomats = -5
+	envoy_travel_time = 0.5
+}
+
+cm_dip_rep_great = {
+	diplomatic_reputation = 10
+}
+cm_dip_rep_bonus = {
+	diplomatic_reputation = 5
+}
+cm_dip_rep_malus = {
+	diplomatic_reputation = -5
+}
+cm_dip_rep_fucked = {
+	diplomatic_reputation = -10
+}
+
+cm_dip_rel_great = {
+	diplomatic_upkeep = 5
+}
+cm_dip_rel_bonus = {
+	diplomatic_upkeep = 2
+}
+cm_dip_rel_malus = {
+	diplomatic_upkeep = -2
+}
+cm_dip_rel_fucked = {
+	diplomatic_upkeep = -5
+}
+
+cm_dip_ae_great = {
+	ae_impact = -0.5
+}
+cm_dip_ae_bonus = {
+	ae_impact = -0.2
+}
+cm_dip_ae_malus = {
+	ae_impact = 0.2
+}
+cm_dip_ae_fucked = {
+	ae_impact = 0.5
+}
+
+cm_dip_vassals_great = {
+	reduced_liberty_desire = 50
+	diplomatic_annexation_cost = -0.5
+	accept_vassalization_reasons = 50
+}
+cm_dip_vassals_bonus = {
+	reduced_liberty_desire = 20
+	diplomatic_annexation_cost = -0.2
+	accept_vassalization_reasons = 20
+}
+cm_dip_vassals_malus = {
+	reduced_liberty_desire = -20
+	diplomatic_annexation_cost = 0.2
+	accept_vassalization_reasons = -20
+}
+cm_dip_vassals_fucked = {
+	reduced_liberty_desire = -50
+	diplomatic_annexation_cost = 0.5
+	accept_vassalization_reasons = -50
+}

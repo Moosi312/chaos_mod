@@ -13,11 +13,9 @@ cm_add_modifiers_standard = {
 			cm_add_bad_modifier_exact = { MODIFIER = $MOD_WORSE$ }
 		}
 	}
-	add_stability = 1
 }
 
 cm_add_good_modifier_exact = {
-	add_legitimacy = 1
 	if = {
 		limit = { has_global_flag = cm_good_effect_duration_short }
 		add_country_modifier = {
@@ -80,7 +78,6 @@ cm_add_bad_modifier_exact = {
 }
 
 cm_add_good_modifier_custom = {
-	add_legitimacy = 1
 	if = {
 		limit = { has_global_flag = cm_good_effect_duration_short }
 		add_country_modifier = {

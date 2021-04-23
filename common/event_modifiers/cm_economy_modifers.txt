@@ -1,0 +1,158 @@
+
+cm_econ_tax_great = {
+	global_tax_modifier = 0.5
+}
+cm_econ_tax_bonus = {
+	global_tax_modifier = 0.2
+}
+cm_econ_tax_malus = {
+	global_tax_modifier = -0.2
+}
+cm_econ_tax_fucked = {
+	global_tax_modifier = -0.5
+}
+
+cm_econ_production_great = {
+	production_efficiency = 0.5
+}
+cm_econ_production_bonus = {
+	production_efficiency = 0.2
+}
+cm_econ_production_malus = {
+	production_efficiency = -0.2
+}
+cm_econ_production_fucked = {
+	production_efficiency = -0.5
+}
+
+cm_econ_dev_great = {
+	development_cost = -0.5
+}
+cm_econ_dev_bonus = {
+	development_cost = -0.2
+}
+cm_econ_dev_malus = {
+	development_cost = 0.5
+}
+cm_econ_dev_fucked = {
+	development_cost = 1
+}
+
+cm_econ_building_great = {
+	build_cost = -0.5
+	build_time = -0.5
+}
+cm_econ_building_bonus = {
+	build_cost = -0.2
+	build_time = -0.2
+}
+cm_econ_building_malus = {
+	build_cost = 0.5
+	build_time = 0.5
+}
+cm_econ_building_fucked = {
+	build_cost = 1
+	build_time = 1
+}
+
+cm_econ_admin_eff_great = {
+	administrative_efficiency = 0.2
+}
+cm_econ_admin_eff_bonus = {
+	administrative_efficiency = 0.1
+}
+cm_econ_admin_eff_malus = {
+	administrative_efficiency = -0.1
+}
+cm_econ_admin_eff_fucked = {
+	administrative_efficiency = -0.2
+}
+
+cm_econ_core_creation_great = {
+	core_creation = -0.5
+}
+cm_econ_core_creation_bonus = {
+	core_creation = -0.2
+}
+cm_econ_core_creation_malus = {
+	core_creation = 0.5
+}
+cm_econ_core_creation_fucked = {
+	core_creation = 1
+}
+
+cm_econ_trade_great = {
+	caravan_power = 0.5
+	global_trade_power = 0.5
+}
+cm_econ_trade_bonus = {
+	caravan_power = 0.2
+	global_trade_power = 0.2
+}
+cm_econ_trade_malus = {
+	caravan_power = -0.2
+	global_trade_power = -0.2
+}
+cm_econ_trade_fucked = {
+	caravan_power = -0.5
+	global_trade_power = -0.5
+}
+
+cm_econ_merchants_great = {
+	merchants = 5
+	placed_merchant_power = 5
+}
+cm_econ_merchants_bonus = {
+	merchants = 2
+	placed_merchant_power = 2
+}
+cm_econ_merchants_malus = {
+	merchants = -2
+	placed_merchant_power = -2
+}
+cm_econ_merchants_fucked = {
+	merchants = -5
+	placed_merchant_power = -5
+}
+
+cm_econ_trade_eff_great = {
+	trade_efficiency = 0.5
+	trade_range_modifier = 0.5
+	trade_steering = 0.5
+}
+cm_econ_trade_eff_bonus = {
+	trade_efficiency = 0.2
+	trade_range_modifier = 0.2
+	trade_steering = 0.2
+}
+cm_econ_trade_eff_malus = {
+	trade_efficiency = -0.2
+	trade_range_modifier = -0.2
+	trade_steering = -0.2
+}
+cm_econ_trade_eff_fucked = {
+	trade_efficiency = -0.5
+	trade_range_modifier = -0.5
+	trade_steering = -0.5
+}
+
+cm_econ_trade_ships_great = {
+	global_ship_trade_power = 0.5
+	ship_power_propagation = 0.5
+	privateer_efficiency = 0.5
+}
+cm_econ_trade_ships_bonus = {
+	global_ship_trade_power = 0.2
+	ship_power_propagation = 0.2
+	privateer_efficiency = 0.2
+}
+cm_econ_trade_ships_malus = {
+	global_ship_trade_power = -0.2
+	ship_power_propagation = -0.2
+	privateer_efficiency = -0.2
+}
+cm_econ_trade_ships_fucked = {
+	global_ship_trade_power = -0.5
+	ship_power_propagation = -0.5
+	privateer_efficiency = -0.5
+}

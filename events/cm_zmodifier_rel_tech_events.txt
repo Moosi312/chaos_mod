@@ -1,0 +1,223 @@
+# Chaos mod government modifiers event
+
+namespace = cm_rel_tech_mod_events
+
+# tech
+country_event = {
+	id = cm_rel_tech_mod_events.1
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_rt_tech_cost_great
+			MOD_GOOD = cm_rt_tech_cost_bonus
+			MOD_BAD = cm_rt_tech_cost_malus
+			MOD_WORSE = cm_rt_tech_cost_fucked
+		}
+	}
+}
+
+# ideas
+country_event = {
+	id = cm_rel_tech_mod_events.2
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_rt_idea_cost_great
+			MOD_GOOD = cm_rt_idea_cost_bonus
+			MOD_BAD = cm_rt_idea_cost_malus
+			MOD_WORSE = cm_rt_idea_cost_fucked
+		}
+	}
+}
+
+# institution
+country_event = {
+	id = cm_rel_tech_mod_events.3
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_rt_institution_great
+			MOD_GOOD = cm_rt_institution_bonus
+			MOD_BAD = cm_rt_institution_malus
+			MOD_WORSE = cm_rt_institution_fucked
+		}
+	}
+}
+
+# policies
+country_event = {
+	id = cm_rel_tech_mod_events.4
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_rt_policies_great
+			MOD_GOOD = cm_rt_policies_bonus
+			MOD_BAD = cm_rt_policies_malus
+			MOD_WORSE = cm_rt_policies_fucked
+		}
+	}
+}
+
+# country monarch power
+country_event = {
+	id = cm_rel_tech_mod_events.5
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_rt_monarch_power_great
+			MOD_GOOD = cm_rt_monarch_power_bonus
+			MOD_BAD = cm_rt_monarch_power_malus
+			MOD_WORSE = cm_rt_monarch_power_fucked
+		}
+	}
+}
+
+# missionary
+country_event = {
+	id = cm_rel_tech_mod_events.6
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_rt_missionary_great
+			MOD_GOOD = cm_rt_missionary_bonus
+			MOD_BAD = cm_rt_missionary_malus
+			MOD_WORSE = cm_rt_missionary_fucked
+		}
+	}
+}
+
+# rel unity
+country_event = {
+	id = cm_rel_tech_mod_events.7
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_rt_unity_great
+			MOD_GOOD = cm_rt_unity_bonus
+			MOD_BAD = cm_rt_unity_malus
+			MOD_WORSE = cm_rt_unity_fucked
+		}
+	}
+}
+
+# tolerance true faith
+country_event = {
+	id = cm_rel_tech_mod_events.8
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_rt_tol_own_great
+			MOD_GOOD = cm_rt_tol_own_bonus
+			MOD_BAD = cm_rt_tol_own_malus
+			MOD_WORSE = cm_rt_tol_own_fucked
+		}
+	}
+}
+
+# rel tolerance
+country_event = {
+	id = cm_rel_tech_mod_events.9
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_rt_tol_faith_great
+			MOD_GOOD = cm_rt_tol_faith_bonus
+			MOD_BAD = cm_rt_tol_faith_malus
+			MOD_WORSE = cm_rt_tol_faith_fucked
+		}
+	}
+}
+
+# church poweres
+country_event = {
+	id = cm_rel_tech_mod_events.10
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_rt_church_power_great
+			MOD_GOOD = cm_rt_church_power_bonus
+			MOD_BAD = cm_rt_church_power_malus
+			MOD_WORSE = cm_rt_church_power_fucked
+		}
+	}
+}
+
+# crusader
+country_event = {
+	id = cm_rel_tech_mod_events.11
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_rt_crusade_great
+			MOD_GOOD = cm_rt_crusade_bonus
+			MOD_BAD = cm_rt_crusade_malus
+			MOD_WORSE = cm_rt_crusade_fucked
+		}
+	}
+}

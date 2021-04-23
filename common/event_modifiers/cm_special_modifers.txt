@@ -1,0 +1,38 @@
+
+cm_spec_colonists_great = {
+	colonists = 5
+	colonist_placement_chance = 0.5
+}
+cm_spec_colonists_bonus = {
+	colonists = 2
+	colonist_placement_chance = 0.2
+}
+cm_spec_colonists_malus = {
+	colonists = -2
+	colonist_placement_chance = -0.5
+}
+cm_spec_colonists_fucked = {
+	colonists = -5
+	colonist_placement_chance = -1
+}
+
+cm_spec_col_growth_great = {
+	global_colonial_growth = 100
+	native_assimilation = 0.5
+	expel_minorities_cost = -0.5
+}
+cm_spec_col_growth_bonus = {
+	global_colonial_growth = 50
+	native_assimilation = 0.2
+	expel_minorities_cost = -0.2
+}
+cm_spec_col_growth_malus = {
+	global_colonial_growth = -50
+	native_assimilation = -0.5
+	expel_minorities_cost = 0.5
+}
+cm_spec_col_growth_fucked = {
+	global_colonial_growth = -100
+	native_assimilation = -1
+	expel_minorities_cost = 1
+}

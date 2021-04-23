@@ -1,0 +1,203 @@
+# Chaos mod economy modifiers event
+
+namespace = cm_economy_mod_events
+
+# tax
+country_event = {
+	id = cm_economy_mod_events.1
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_econ_tax_great
+			MOD_GOOD = cm_econ_tax_bonus
+			MOD_BAD = cm_econ_tax_malus
+			MOD_WORSE = cm_econ_tax_fucked
+		}
+	}
+}
+
+# production
+country_event = {
+	id = cm_economy_mod_events.2
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_econ_production_great
+			MOD_GOOD = cm_econ_production_bonus
+			MOD_BAD = cm_econ_production_malus
+			MOD_WORSE = cm_econ_production_fucked
+		}
+	}
+}
+
+# dev
+country_event = {
+	id = cm_economy_mod_events.3
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_econ_dev_great
+			MOD_GOOD = cm_econ_dev_bonus
+			MOD_BAD = cm_econ_dev_malus
+			MOD_WORSE = cm_econ_dev_fucked
+		}
+	}
+}
+
+# building
+country_event = {
+	id = cm_economy_mod_events.4
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_econ_building_great
+			MOD_GOOD = cm_econ_building_bonus
+			MOD_BAD = cm_econ_building_malus
+			MOD_WORSE = cm_econ_building_fucked
+		}
+	}
+}
+
+# admin eff
+country_event = {
+	id = cm_economy_mod_events.5
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_econ_admin_eff_great
+			MOD_GOOD = cm_econ_admin_eff_bonus
+			MOD_BAD = cm_econ_admin_eff_malus
+			MOD_WORSE = cm_econ_admin_eff_fucked
+		}
+	}
+}
+
+# core creation
+country_event = {
+	id = cm_economy_mod_events.6
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_econ_core_creation_great
+			MOD_GOOD = cm_econ_core_creation_bonus
+			MOD_BAD = cm_econ_core_creation_malus
+			MOD_WORSE = cm_econ_core_creation_fucked
+		}
+	}
+}
+
+# trade
+country_event = {
+	id = cm_economy_mod_events.7
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_econ_trade_great
+			MOD_GOOD = cm_econ_trade_bonus
+			MOD_BAD = cm_econ_trade_malus
+			MOD_WORSE = cm_econ_trade_fucked
+		}
+	}
+}
+
+# merchants
+country_event = {
+	id = cm_economy_mod_events.8
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_econ_merchants_great
+			MOD_GOOD = cm_econ_merchants_bonus
+			MOD_BAD = cm_econ_merchants_malus
+			MOD_WORSE = cm_econ_merchants_fucked
+		}
+	}
+}
+
+# trade eff
+country_event = {
+	id = cm_economy_mod_events.9
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_econ_trade_eff_great
+			MOD_GOOD = cm_econ_trade_eff_bonus
+			MOD_BAD = cm_econ_trade_eff_malus
+			MOD_WORSE = cm_econ_trade_eff_fucked
+		}
+	}
+}
+
+# trade ships
+country_event = {
+	id = cm_economy_mod_events.10
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		cm_add_modifiers_standard = {
+			MOD_GREAT = cm_econ_trade_ships_great
+			MOD_GOOD = cm_econ_trade_ships_bonus
+			MOD_BAD = cm_econ_trade_ships_malus
+			MOD_WORSE = cm_econ_trade_ships_fucked
+		}
+	}
+}

@@ -1,0 +1,81 @@
+
+cm_stab_unrest_great = {
+	global_unrest = -10
+}
+cm_stab_unrest_bonus = {
+	global_unrest = -5
+}
+cm_stab_unrest_malus = {
+	global_unrest = 5
+}
+cm_stab_unrest_fucked = {
+	global_unrest = 10
+}
+
+cm_stab_culture_great = {
+	culture_conversion_cost = -0.5
+	num_accepted_cultures = 5
+}
+cm_stab_culture_bonus = {
+	culture_conversion_cost = -0.2
+	num_accepted_cultures = 2
+}
+cm_stab_culture_malus = {
+	culture_conversion_cost = 0.5
+	num_accepted_cultures = -2
+}
+cm_stab_culture_fucked = {
+	culture_conversion_cost = 1
+	num_accepted_cultures = -5
+}
+
+cm_stab_stab_great = {
+	stability_cost_modifier = -0.5
+	stability_cost_to_declare_war = -2
+}
+cm_stab_stab_bonus = {
+	stability_cost_modifier = -0.2
+	stability_cost_to_declare_war = -1
+}
+cm_stab_stab_malus = {
+	stability_cost_modifier = 0.5
+	stability_cost_to_declare_war = 1
+}
+cm_stab_stab_fucked = {
+	stability_cost_modifier = 1
+	stability_cost_to_declare_war = 2
+}
+
+cm_stab_autonomy_great = {
+	min_autonomy = -0.5
+	min_autonomy_in_territories = -0.5
+	global_autonomy = -0.1
+}
+cm_stab_autonomy_bonus = {
+	min_autonomy = -0.2
+	min_autonomy_in_territories = -0.2
+	global_autonomy = -0.05
+}
+cm_stab_autonomy_malus = {
+	min_autonomy = 0.2
+	min_autonomy_in_territories = 0.2
+	global_autonomy = 0.05
+}
+cm_stab_autonomy_fucked = {
+	min_autonomy = 0.5
+	min_autonomy_in_territories = 0.5
+	global_autonomy = 0.1
+}
+
+cm_stab_seperatism_great = {
+	years_of_nationalism = -20
+}
+cm_stab_seperatism_bonus = {
+	years_of_nationalism = -10
+}
+cm_stab_seperatism_malus = {
+	years_of_nationalism = 10
+}
+cm_stab_seperatism_fucked = {
+	years_of_nationalism = 20
+}
