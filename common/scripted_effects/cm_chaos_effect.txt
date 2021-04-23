@@ -4,11 +4,11 @@
 cm_choas_main_function = {
 	random_list = {
 
-		##############################
-		########   EFFECTS    ########
-		##############################
+##############################
+########   EFFECTS    ########
+##############################
 
-		### DIPLOMACY EVENTS ###
+### DIPLOMACY EVENTS ###
 
 		1 = { # add historical friend
 			country_event = {
@@ -60,7 +60,7 @@ cm_choas_main_function = {
 			}
 		}
 
-		### ECONOMY EVENTS ###
+### ECONOMY EVENTS ###
 
 		1 = { # add year of income
 			country_event = {
@@ -146,7 +146,7 @@ cm_choas_main_function = {
 			}
 		}
 		
-		### GOVERNMENT EVENTS ###
+### GOVERNMENT EVENTS ###
 
 		
 		1 = { # add legitimacy
@@ -292,9 +292,29 @@ cm_choas_main_function = {
 				has_regency = yes
 			}
 		}
+			
+		1 = { # add estate loyalty
+			country_event = {
+				id = cm_government_events.19
+			}
+			modifier = {
+				factor = 0
+				has_regency = yes
+			}
+		}
 		
+		1 = { # remove estate loyalty
+			country_event = {
+				id = cm_government_events.20
+			}
+			modifier = {
+				factor = 0
+				has_regency = yes
+			}
+		}
+	
 		
-		### MILITARY EVENTS ###
+### MILITARY EVENTS ###
 
 		1 = { # add tradition
 			country_event = {
@@ -399,7 +419,7 @@ cm_choas_main_function = {
 		}
 		
 		
-		### REL-TECH EVENTS ###
+### REL-TECH EVENTS ###
 		
 		1 = { # convert provinces
 			country_event = {
@@ -450,7 +470,7 @@ cm_choas_main_function = {
 		}
 		
 		
-		### SPECIAL EVENTS ###
+### SPECIAL EVENTS ###
 
 		1 = { # add imperial authority
 			country_event = {
@@ -524,7 +544,7 @@ cm_choas_main_function = {
 		}
 		
 		
-		### STABILITY EVENTS ###
+### STABILITY EVENTS ###
 
 		1 = { # spawn pretenderr rebels
 			country_event = {
@@ -575,11 +595,11 @@ cm_choas_main_function = {
 		}
 		
 
-		################################
-		########   MODIFIERS    ########
-		################################
+################################
+########   MODIFIERS    ########
+################################
 
-		### DIPLOMACY MODIFIERS ###
+### DIPLOMACY MODIFIERS ###
 
 		1 = { # diplomats
 			country_event = {
@@ -612,7 +632,7 @@ cm_choas_main_function = {
 		}
 		
 
-		### ECONOMY MODIFIERS ###
+### ECONOMY MODIFIERS ###
 
 		1 = { # tax
 			country_event = {
@@ -674,8 +694,8 @@ cm_choas_main_function = {
 			}
 		}
 		
-		
-		### GOVERNMENT MODIFIERS ###
+
+### GOVERNMENT MODIFIERS ###
 
 		1 = { # prestige
 			country_event = {
@@ -769,7 +789,7 @@ cm_choas_main_function = {
 		}
 		
 		
-		### MILITARY MODIFIERS ###
+### MILITARY MODIFIERS ###
 
 		1 = { # amry mod
 			country_event = {
@@ -844,7 +864,7 @@ cm_choas_main_function = {
 		}
 		
 		
-		### REL-TECH MODIFIERS ###
+### REL-TECH MODIFIERS ###
 
 		1 = { # tech
 			country_event = {
@@ -913,7 +933,7 @@ cm_choas_main_function = {
 		}
 		
 		
-		### SPECIAL MODIFIERS ###
+### SPECIAL MODIFIERS ###
 
 		1 = { # colonists
 			country_event = {
@@ -928,7 +948,7 @@ cm_choas_main_function = {
 		}
 		
 		
-		### STABILITY MODIFIERS ###
+### STABILITY MODIFIERS ###
 
 		1 = { # unrest
 			country_event = {
