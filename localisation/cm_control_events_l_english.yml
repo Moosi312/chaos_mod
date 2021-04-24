@@ -20,6 +20,8 @@
  cm_control_events.2.a: "Set frequency of chaos event"
  cm_control_events.2.b: "Set bad effects duration"
  cm_control_events.2.c: "Set good effects duration"
+ cm_control_events.2.e: "Enable nation ruin events. Currently §RENABLED§!"
+ cm_control_events.2.f: "Enable nation ruin events. Currently §GDISABLED§!"
  cm_control_events.2.x: "EXIT"
  cm_control_events.3.t: "Set bad effects duration"
  cm_control_events.3.d: "Here you can decide how long you want the adverse chaos effects to last.\nThe options given don't reflect exactly how long an effect is going to last, since I decide the exact duration based on its likely impact on the game.\n\nThe given numbers are merely an average. Effects can also last longer or shorter."

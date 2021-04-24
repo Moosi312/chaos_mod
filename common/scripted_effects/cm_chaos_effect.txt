@@ -145,6 +145,12 @@ cm_choas_main_function = {
 				id = cm_economy_events.14
 			}
 		}
+
+		1 = { # take out loans
+			country_event = {
+				id = cm_economy_events.15
+			}
+		}
 		
 ### GOVERNMENT EVENTS ###
 

@@ -162,6 +162,20 @@ country_event = {
 			id = cm_control_events.4
 		}
 	}
+	option = {
+		name = "cm_control_events.2.e"
+		trigger = {
+			has_global_flag = cm_nation_ruin_events_enabled
+		}
+		clr_global_flag = cm_nation_ruin_events_enabled
+	}
+	option = {
+		name = "cm_control_events.2.f"
+		trigger = {
+			NOT = { has_global_flag = cm_nation_ruin_events_enabled }
+		}
+		set_global_flag = cm_nation_ruin_events_enabled
+	}
 	option = { # exit
 		name = "cm_control_events.2.x"
 	}

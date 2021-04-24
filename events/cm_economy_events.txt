@@ -397,6 +397,40 @@ country_event = {
 			}
 			remove_building = university
 		}
+	}
 }
+
+# take out loans
+country_event = {
+	id = cm_economy_events.15
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_loan = {
+			interest_modifier = 1
+			duration = 60
+		}
+		add_loan = {
+			interest_modifier = 1
+			duration = 60
+		}
+		add_loan = {
+			interest_modifier = 1
+			duration = 60
+		}
+		add_loan = {
+			interest_modifier = 1
+			duration = 60
+		}
+		add_loan = {
+			interest_modifier = 1
+			duration = 60
+		}
+	}
 }
 
