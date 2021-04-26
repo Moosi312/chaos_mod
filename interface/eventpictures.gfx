@@ -13,8 +13,20 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "CHOAS_DUDE_eventPicture"
-		texturefile = "gfx/event_pictures/event_pictures_CHAOS/CHOAS_DUDE_eventPicture.dds"
+		name = "CHAOS_DUDE_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_CHAOS/CHAOS_DUDE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "CHAOS_FINE_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_CHAOS/CHAOS_FINE_eventPicture.dds"
+		allwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "CHOAS_NATION_RUIN_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_CHAOS/CHAOS_NATION_RUIN_eventPicture.dds"
 		allwaystransparent = yes
 	}
 }

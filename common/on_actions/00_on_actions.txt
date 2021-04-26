@@ -1,0 +1,7 @@
+#When adding effects directly in on_actions always consider if it would be best to do so through a scripted effect. on_actions with a lot of script in them are harder to get an overview of.
+
+# country
+on_startup = {
+	set_global_flag = cm_bad_effect_duration_medium
+	set_global_flag = cm_good_effect_duration_medium
+}

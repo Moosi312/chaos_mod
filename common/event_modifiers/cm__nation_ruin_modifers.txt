@@ -1,0 +1,17 @@
+
+cm_nrm_diplomats_great = {
+	diplomats = 5
+	envoy_travel_time = -0.5
+}
+cm_nrm_diplomats_bonus = {
+	diplomats = 2
+	envoy_travel_time = -0.2
+}
+cm_nrm_diplomats_malus = {
+	diplomats = -2
+	envoy_travel_time = 0.2
+}
+cm_nrm_diplomats_fucked = {
+	diplomats = -5
+	envoy_travel_time = 0.5
+}

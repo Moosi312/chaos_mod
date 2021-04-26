@@ -1,0 +1,18 @@
+# Chaos mod economy event
+
+namespace = cm_nation_ruin_events
+
+# add year of income
+country_event = {
+	id = cm_nation_ruin_events.1
+	title = "chaos_mod_nation_ruin_event_title"
+	desc = "chaos_mod_nation_ruin_event_desc"
+	picture = CHOAS_NATION_RUIN_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_nation_ruin_event_option_name"
+		
+	}
+}

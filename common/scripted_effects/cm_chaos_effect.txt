@@ -985,6 +985,23 @@ cm_choas_main_function = {
 				id = cm_rel_tech_mod_events.5
 			}
 		}
-		
+				
+
+##################################
+########   NATION RUIN    ########
+##################################
+
+### EFFECTS ###
+
+		1 = { # 
+			country_event = {
+				id = cm_rel_tech_mod_events.5
+			}
+			modifier = {
+				factor = 0
+				has_global_flag = cm_nation_ruin_events_disabled
+			}
+		}
+
 	}
 }
