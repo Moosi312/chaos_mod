@@ -1,7 +1,8 @@
-version="0.0.1"
+version="1.0.1"
 tags={
 	"Events"
 }
 name="Chaos mod"
-supported_version="1.30.6"
+picture="thumbnail.png"
+supported_version="1.31.4"
 remote_file_id="2465947102"
