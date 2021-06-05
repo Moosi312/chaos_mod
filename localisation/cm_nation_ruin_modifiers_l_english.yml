@@ -1,5 +1,7 @@
 ﻿l_english:
- cm_nrm_diplomats_great: "Diplomats amazing bonus"
- cm_nrm_diplomats_bonus: "Diplomats good bonus"
- cm_nrm_diplomats_malus: "Diplomats bad malus"
- cm_nrm_diplomats_fucked: "Diplomats terrible malus"
+ cm_kill_all_advisors: "Kill all advisors"
+ cm_kill_all_leaders: "Kill all leaders"
+ cm_kill_all_units: "Kill all units"
+ cm_no_income: "No income"
+ cm_no_army: "No army"
+ cm_fucked_government: "Fucked government"

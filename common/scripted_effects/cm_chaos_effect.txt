@@ -993,9 +993,75 @@ cm_choas_main_function = {
 
 ### EFFECTS ###
 
-		1 = { # 
+		1 = { # fuck the government
 			country_event = {
-				id = cm_rel_tech_mod_events.5
+				id = cm_nation_ruin_events.1
+			}
+			modifier = {
+				factor = 0
+				has_global_flag = cm_nation_ruin_events_disabled
+			}
+		}
+
+		1 = { # remove all cores
+			country_event = {
+				id = cm_nation_ruin_events.2
+			}
+			modifier = {
+				factor = 0
+				has_global_flag = cm_nation_ruin_events_disabled
+			}
+		}
+
+		1 = { # declare war on alll neighbors
+			country_event = {
+				id = cm_nation_ruin_events.3
+			}
+			modifier = {
+				factor = 0
+				has_global_flag = cm_nation_ruin_events_disabled
+			}
+		}
+
+		1 = { # delete everyone
+			country_event = {
+				id = cm_nation_ruin_events.4
+			}
+			modifier = {
+				factor = 0
+				has_global_flag = cm_nation_ruin_events_disabled
+			}
+		}
+
+
+### MODIFIERS ###
+
+		1 = { # no income
+			country_event = {
+				id = cm_nation_ruin_mod_events.1
+			}
+			modifier = {
+				factor = 0
+				has_global_flag = cm_nation_ruin_events_disabled
+			}
+			modifier = {
+				factor = 0 # doesn't work, income capped at 1%
+			}
+		}
+
+		1 = { # no army
+			country_event = {
+				id = cm_nation_ruin_mod_events.2
+			}
+			modifier = {
+				factor = 0
+				has_global_flag = cm_nation_ruin_events_disabled
+			}
+		}
+
+		1 = { # fucked government
+			country_event = {
+				id = cm_nation_ruin_mod_events.3
 			}
 			modifier = {
 				factor = 0

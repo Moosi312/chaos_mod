@@ -1,17 +1,54 @@
 
-cm_nrm_diplomats_great = {
-	diplomats = 5
-	envoy_travel_time = -0.5
+cm_no_income = {
+	global_tax_modifier = -10
+	vassal_income = -10
+	production_efficiency = -10
+	treasure_fleet_income = -10
+	trade_efficiency = -10
+	global_tariffs = -10
+	loot_amount = -10
 }
-cm_nrm_diplomats_bonus = {
-	diplomats = 2
-	envoy_travel_time = -0.2
+
+cm_no_army = {
+	infantry_fire = -10
+	infantry_shock = -10
+	cavalry_fire = -10
+	cavalry_shock = -10
+	artillery_fire = -10
+	artillery_shock = -10
+	discipline = -10
+	land_morale = -10
+	movement_speed = -0.9
+	manpower_recovery_speed = -10
+	global_manpower_modifier = -10
+	leader_land_fire = -10
+	leader_land_manuever = -10
+	leader_land_shock = -10
+	leader_siege = -10
+	mercenary_manpower= -10
 }
-cm_nrm_diplomats_malus = {
-	diplomats = -2
-	envoy_travel_time = 0.2
-}
-cm_nrm_diplomats_fucked = {
-	diplomats = -5
-	envoy_travel_time = 0.5
+
+cm_fucked_government = {
+	global_unrest = 20
+	stability_cost_modifier = 10
+	max_absolutism = -1000
+	legitimacy = -10
+	republican_tradition = -10
+	devotion = -10
+	horde_unity = -10
+	meritocracy = -10
+	prestige = -10
+	imperial_mandate = -10
+	reform_progress_growth = -10
+	governing_capacity_modifier = -10
+	imperial_authority = -10
+	advisor_pool = -10
+	heir_chance = -10
+	monarch_lifespan = -0.9
+	technology_cost = 10
+	idea_cost = 10
+	all_power_cost = 1
+	diplomats = -10
+	diplomatic_reputation = -10
+	diplomatic_upkeep = -5
 }

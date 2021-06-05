@@ -195,6 +195,7 @@ country_event = {
 	id = cm_control_events.2001
 	title = "chaos_mod_event_title"
 	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
 	
 	is_triggered_only = yes
 	hidden = yes

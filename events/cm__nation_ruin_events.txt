@@ -2,7 +2,7 @@
 
 namespace = cm_nation_ruin_events
 
-# add year of income
+# fuck the government
 country_event = {
 	id = cm_nation_ruin_events.1
 	title = "chaos_mod_nation_ruin_event_title"
@@ -13,6 +13,148 @@ country_event = {
 
 	option = {
 		name = "chaos_mod_nation_ruin_event_option_name"
-		
+		add_stability = -6
+		add_war_exhaustion = 20
+		add_legitimacy = -100
+		add_republican_tradition = -100
+		add_horde_unity = -100
+		add_meritocracy = -100
+		add_devotion = -100
+		add_prestige = -200
+	}
+}
+
+# remove all cores
+country_event = {
+	id = cm_nation_ruin_events.2
+	title = "chaos_mod_nation_ruin_event_title"
+	desc = "chaos_mod_nation_ruin_event_desc"
+	picture = CHOAS_NATION_RUIN_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_nation_ruin_event_option_name"
+		every_owned_province = {
+			remove_core = ROOT
+		}
+	}
+}
+
+# declare war on alll neighbors
+country_event = {
+	id = cm_nation_ruin_events.3
+	title = "chaos_mod_nation_ruin_event_title"
+	desc = "chaos_mod_nation_ruin_event_desc"
+	picture = CHOAS_NATION_RUIN_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_nation_ruin_event_option_name"
+		every_neighbor_country = {
+			ROOT = {
+				declare_war = PREV
+			}
+		}
+	}
+}
+
+# delete everyone
+country_event = {
+	id = cm_nation_ruin_events.4
+	title = "chaos_mod_nation_ruin_event_title"
+	desc = "chaos_mod_nation_ruin_event_desc"
+	picture = CHOAS_NATION_RUIN_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_nation_ruin_event_option_name"
+		custom_tooltip = cm_kill_all_advisors
+		custom_tooltip = cm_kill_all_leaders
+		custom_tooltip = cm_kill_all_units
+		hidden_effect = {
+			kill_advisor = random
+			kill_advisor = random
+			kill_advisor = random
+			kill_leader = {
+				type = random
+			}
+			kill_leader = {
+				type = random
+			}
+			kill_leader = {
+				type = random
+			}
+			kill_leader = {
+				type = random
+			}
+			kill_leader = {
+				type = random
+			}
+			kill_leader = {
+				type = random
+			}
+			kill_leader = {
+				type = random
+			}
+			kill_leader = {
+				type = random
+			}
+			kill_leader = {
+				type = random
+			}
+			kill_leader = {
+				type = random
+			}
+			kill_leader = {
+				type = random
+			}
+			kill_leader = {
+				type = random
+			}
+			kill_leader = {
+				type = random
+			}
+			kill_leader = {
+				type = random
+			}
+			kill_leader = {
+				type = random
+			}
+			kill_leader = {
+				type = random
+			}
+			kill_leader = {
+				type = random
+			}
+			every_province = {
+				limit = {
+					units_in_province = ROOT
+				}
+				if = {
+					limit = {
+						owned_by = ROOT
+					}
+					kill_units = {
+						who = owner
+					}
+				}
+				else_if = {
+					limit = {
+						controlled_by = ROOT
+					}
+					kill_units = {
+						who = controller
+					}
+				}
+				else = {
+					kill_units = {
+						who = enemy
+					}
+				}
+			}
+		}
 	}
 }

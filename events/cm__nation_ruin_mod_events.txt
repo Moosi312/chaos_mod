@@ -2,7 +2,7 @@
 
 namespace = cm_nation_ruin_mod_events
 
-# diplomats
+# no income
 country_event = {
 	id = cm_nation_ruin_mod_events.1
 	title = "chaos_mod_nation_ruin_event_title"
@@ -13,11 +13,54 @@ country_event = {
 
 	option = {
 		name = "chaos_mod_nation_ruin_event_option_name"
-		cm_add_modifiers_standard = {
-			MOD_GREAT = cm_dip_diplomats_great
-			MOD_GOOD = cm_dip_diplomats_bonus
-			MOD_BAD = cm_dip_diplomats_malus
-			MOD_WORSE = cm_dip_diplomats_fucked
+		cm_add_bad_modifier_custom = {
+			MODIFIER = cm_no_income
+			DUR_SHORT = 180
+			DUR_MEDIUM = 360
+			DUR_LONG = 720
+			DUR_INSANE = 1800
+		}
+	}
+}
+
+# no army
+country_event = {
+	id = cm_nation_ruin_mod_events.2
+	title = "chaos_mod_nation_ruin_event_title"
+	desc = "chaos_mod_nation_ruin_event_desc"
+	picture = CHOAS_NATION_RUIN_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_nation_ruin_event_option_name"
+		cm_add_bad_modifier_custom = {
+			MODIFIER = cm_no_army
+			DUR_SHORT = 180
+			DUR_MEDIUM = 360
+			DUR_LONG = 720
+			DUR_INSANE = 1800
+		}
+	}
+}
+
+# fucked government
+country_event = {
+	id = cm_nation_ruin_mod_events.3
+	title = "chaos_mod_nation_ruin_event_title"
+	desc = "chaos_mod_nation_ruin_event_desc"
+	picture = CHOAS_NATION_RUIN_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_nation_ruin_event_option_name"
+		cm_add_bad_modifier_custom = {
+			MODIFIER = cm_fucked_government
+			DUR_SHORT = 180
+			DUR_MEDIUM = 360
+			DUR_LONG = 720
+			DUR_INSANE = 1800
 		}
 	}
 }
