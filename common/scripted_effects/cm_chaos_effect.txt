@@ -524,10 +524,7 @@ cm_choas_main_function = {
 			}
 			modifier = {
 				factor = 0
-				OR = {
-					num_of_electors = 7
-					is_part_of_hre = no
-				}
+				NOT = { num_of_electors = 7 }
 			}
 		}
 		
@@ -546,6 +543,22 @@ cm_choas_main_function = {
 		1 = { # undiscover random region
 			country_event = {
 				id = cm_special_events.8
+			}
+		}
+		
+		1 = { # change country name
+			country_event = {
+				id = cm_special_events.9
+			}
+		}
+		
+		1 = { # shuffle electors
+			country_event = {
+				id = cm_special_events.10
+			}
+			modifier = {
+				factor = 0
+				is_part_of_hre = yes
 			}
 		}
 		

@@ -1,0 +1,4 @@
+
+cm_controller = {
+	prestige = 0
+}

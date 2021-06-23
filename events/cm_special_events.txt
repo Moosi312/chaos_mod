@@ -152,3 +152,359 @@ country_event = {
 		}
 	}
 }
+
+# change country name
+country_event = {
+	id = cm_special_events.9
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		random_list = {
+			1 = {
+				country_event = {
+					id = cm_special_events.9001
+				}
+			}
+			1 = {
+				country_event = {
+					id = cm_special_events.9002
+				}
+			}
+			1 = {
+				country_event = {
+					id = cm_special_events.9003
+				}
+			}
+			1 = {
+				country_event = {
+					id = cm_special_events.9004
+				}
+			}
+			1 = {
+				country_event = {
+					id = cm_special_events.9005
+				}
+			}
+			1 = {
+				country_event = {
+					id = cm_special_events.9006
+				}
+			}
+			1 = {
+				country_event = {
+					id = cm_special_events.9007
+				}
+			}
+			1 = {
+				country_event = {
+					id = cm_special_events.9008
+				}
+			}
+			1 = {
+				country_event = {
+					id = cm_special_events.9009
+				}
+			}
+			1 = {
+				country_event = {
+					id = cm_special_events.9010
+				}
+			}
+		}
+	}
+}
+
+# remove_country_name
+country_event = {
+	id = cm_special_events.9000
+	title = "chaos_mod_reset_country_name"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		restore_country_name = yes
+	}
+}
+
+# country name option 1
+country_event = {
+	id = cm_special_events.9001
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		override_country_name = cm_country_name_1
+		country_event = {
+			id = cm_special_events.9000
+			days = 365
+			random = 3650
+		}
+	}
+}
+
+# country name option 2
+country_event = {
+	id = cm_special_events.9002
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		override_country_name = cm_country_name_2
+		country_event = {
+			id = cm_special_events.9000
+			days = 365
+			random = 3650
+		}
+	}
+}
+
+# country name option 3
+country_event = {
+	id = cm_special_events.9003
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		override_country_name = cm_country_name_3
+		country_event = {
+			id = cm_special_events.9000
+			days = 365
+			random = 3650
+		}
+	}
+}
+
+# country name option 4
+country_event = {
+	id = cm_special_events.9004
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		override_country_name = cm_country_name_4
+		country_event = {
+			id = cm_special_events.9000
+			days = 365
+			random = 3650
+		}
+	}
+}
+
+# country name option 5
+country_event = {
+	id = cm_special_events.9005
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		override_country_name = cm_country_name_5
+		country_event = {
+			id = cm_special_events.9000
+			days = 365
+			random = 3650
+		}
+	}
+}
+
+# country name option 6
+country_event = {
+	id = cm_special_events.9006
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		override_country_name = cm_country_name_6
+		country_event = {
+			id = cm_special_events.9000
+			days = 365
+			random = 3650
+		}
+	}
+}
+
+# country name option 7
+country_event = {
+	id = cm_special_events.9007
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		override_country_name = cm_country_name_7
+		country_event = {
+			id = cm_special_events.9000
+			days = 365
+			random = 3650
+		}
+	}
+}
+
+# country name option 8
+country_event = {
+	id = cm_special_events.9008
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		override_country_name = cm_country_name_8
+		country_event = {
+			id = cm_special_events.9000
+			days = 365
+			random = 3650
+		}
+	}
+}
+
+# country name option 9
+country_event = {
+	id = cm_special_events.9009
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		override_country_name = cm_country_name_9
+		country_event = {
+			id = cm_special_events.9000
+			days = 365
+			random = 3650
+		}
+	}
+}
+
+# country name option 10
+country_event = {
+	id = cm_special_events.9010
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		override_country_name = cm_country_name_10
+		country_event = {
+			id = cm_special_events.9000
+			days = 365
+			random = 3650
+		}
+	}
+}
+
+# shuffle electors
+country_event = {
+	id = cm_special_events.10
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		every_elector = {
+			elector = no
+		}
+		random_country = {
+			limit = {
+				is_part_of_hre = yes
+				is_elector = no
+			}
+			elector = yes
+		}
+		random_country = {
+			limit = {
+				is_part_of_hre = yes
+				is_elector = no
+			}
+			elector = yes
+		}
+		random_country = {
+			limit = {
+				is_part_of_hre = yes
+				is_elector = no
+			}
+			elector = yes
+		}
+		random_country = {
+			limit = {
+				is_part_of_hre = yes
+				is_elector = no
+			}
+			elector = yes
+		}
+		random_country = {
+			limit = {
+				is_part_of_hre = yes
+				is_elector = no
+			}
+			elector = yes
+		}
+		random_country = {
+			limit = {
+				is_part_of_hre = yes
+				is_elector = no
+			}
+			elector = yes
+		}
+		random_country = {
+			limit = {
+				is_part_of_hre = yes
+				is_elector = no
+			}
+			elector = yes
+		}
+		random_country = {
+			limit = {
+				is_part_of_hre = yes
+				is_elector = no
+			}
+			elector = yes
+		}
+	}
+}

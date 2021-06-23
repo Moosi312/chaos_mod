@@ -4,6 +4,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			ai = no
+			has_country_modifier = cm_controller
 		}
 		allow = {
 			always = yes
@@ -15,6 +16,46 @@ country_decisions = {
 		}
 	}
 
+	cm_become_controller = {
+		major = yes
+		potential = {
+			NOT = {
+				has_country_modifier = cm_controller
+			}
+			ai = no
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						any_country = {
+							has_country_modifier = cm_controller
+						}
+					}
+				}
+				add_country_modifier = {
+					name = cm_controller
+					duration = -1
+				}
+			}
+			else = {
+				save_event_target_as = cm_becomes_controller
+				every_country = {
+					limit = {
+						has_country_modifier = cm_controller
+					}
+					country_event = {
+						id = cm_control_events.20
+					}
+				}
+			}
+			
+		}
+	}
+
 	cm_stop_events = {
 		major = yes
 		potential = {
@@ -22,10 +63,14 @@ country_decisions = {
 			ai = no
 		}
 		allow = {
-			always = yes
+			custom_trigger_tooltip = {
+				tooltip = cm_tt_no_opt_out
+				NOT = { has_global_flag = cm_no_opt_out }
+			}
 		}
 		effect = {
 			clr_country_flag = cm_events_running
+			set_country_flag = cm_events_break_condition
 		}
 	}
 
@@ -34,6 +79,7 @@ country_decisions = {
 		potential = {
 			NOT = { has_country_flag = cm_events_running }
 			NOT = { has_country_flag = cm_stopped }
+			has_country_flag = cm_events_break_condition
 			has_global_flag = cm_start_event
 			ai = no
 		}
@@ -42,6 +88,7 @@ country_decisions = {
 		}
 		effect = {
 			set_country_flag = cm_events_running
+			clr_country_flag = cm_events_break_condition
 		}
 	}
 
@@ -49,7 +96,8 @@ country_decisions = {
 		major = yes
 		potential = {
 			NOT = { has_country_flag = cm_events_running }
-			has_country_flag = cm_stopped
+			NOT = { has_country_flag = cm_events_break_condition }
+			has_global_flag = cm_start_event
 			ai = no
 		}
 		allow = {
@@ -58,18 +106,73 @@ country_decisions = {
 		effect = {
 			set_country_flag = cm_events_running
 			clr_country_flag = cm_stopped
-			country_event = {
-				id = cm_control_events.100
-			}
 			every_country = {
 				limit = {
 					ai = no
 				}
 				save_event_target_as = cm_info_event
-				country_event = {
-					id = cm_control_events.51
-					tooltip = TOOLTIP_CHAOS_MOD_PLAYER_INFO
+				# country_event = {
+				# 	id = cm_control_events.51
+				# 	tooltip = TOOLTIP_CHAOS_MOD_PLAYER_INFO
+				# }
+			}
+		}
+	}
+
+	cm_stop_events_for_all = {
+		major = yes
+		potential = {
+			has_country_modifier = cm_controller
+			has_global_flag = cm_start_event
+			ai = no
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			clr_global_flag = cm_start_event
+			every_country = {
+				limit = {
+					has_country_flag = cm_events_running
 				}
+				clr_country_flag = cm_events_running
+				set_country_flag = cm_events_break_condition
+				custom_tooltip = cm_stop_the_next_event
+			}
+		}
+	}
+
+	cm_start_events_for_all = {
+		major = yes
+		potential = {
+			NOT = { has_global_flag = cm_start_event }
+			has_country_modifier = cm_controller
+			ai = no
+		}
+		allow = {
+			always = yes
+			custom_trigger_tooltip = {
+				tooltip = cm_chaos_cycle_not_finished
+				all_countries_including_self = {
+					AND = {
+						NOT = { has_country_flag = cm_events_running }
+						NOT = { has_country_flag = cm_events_break_condition }
+					}
+				}
+			}
+		}
+		effect = {
+			clr_country_flag = cm_stopped
+			set_global_flag =  cm_start_event
+			set_country_flag = cm_events_running
+			every_country = {
+				limit = {
+					ai = no
+				}
+				clr_country_flag = cm_stopped
+			}
+			country_event = {
+				id = cm_control_events.1
 			}
 		}
 	}

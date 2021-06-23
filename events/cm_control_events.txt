@@ -9,19 +9,13 @@ country_event = {
 	desc = "cm_control_events.1.d"
 	picture = CHAOS_ELMO_eventPicture
 
-	trigger = {
-		ai = no
-		not = { has_global_flag = cm_start_event }
-	}
-
-	fire_only_once = yes
+	is_triggered_only = yes
 
 	immediate = {
 		clr_global_flag = cm_frequency_one_month
 		clr_global_flag = cm_frequency_three_months
 		clr_global_flag = cm_frequency_six_months
 		clr_global_flag = cm_frequency_one_year
-		set_global_flag = cm_start_event
 
 		if = {
 			limit = {
@@ -53,16 +47,18 @@ country_event = {
 
 	option = { # 1 month
 		name = "cm_control_events.1.a"
+		set_global_flag = cm_start_event
 		set_global_flag = cm_frequency_one_month
 		set_variable = {
 			which = cm_event_frequency
 			value = 30
 		}
-		set_country_flag = cm_events_running
 		every_country = {
 			limit = {
 				ai = no
 			}
+			clr_country_flag = cm_stopped
+			set_country_flag = cm_events_running
 			country_event = {
 				id = cm_control_events.100
 			}
@@ -70,13 +66,15 @@ country_event = {
 	}
 	option = { # 3 month
 		name = "cm_control_events.1.b"
+		set_global_flag = cm_start_event
 		set_global_flag = cm_frequency_three_months
 		set_variable = {
 			which = cm_event_frequency
 			value = 90
 		}
-		set_country_flag = cm_events_running
 		every_country = {
+			clr_country_flag = cm_stopped
+			set_country_flag = cm_events_running
 			limit = {
 				ai = no
 			}
@@ -87,13 +85,15 @@ country_event = {
 	}
 	option = { # 6 month
 		name = "cm_control_events.1.c"
+		set_global_flag = cm_start_event
 		set_global_flag = cm_frequency_six_months
 		set_variable = {
 			which = cm_event_frequency
 			value = 180
 		}
-		set_country_flag = cm_events_running
 		every_country = {
+			clr_country_flag = cm_stopped
+			set_country_flag = cm_events_running
 			limit = {
 				ai = no
 			}
@@ -104,13 +104,15 @@ country_event = {
 	}
 	option = { # 1 year
 		name = "cm_control_events.1.e"
+		set_global_flag = cm_start_event
 		set_global_flag = cm_frequency_one_year
 		set_variable = {
 			which = cm_event_frequency
 			value = 360
 		}
-		set_country_flag = cm_events_running
 		every_country = {
+			clr_country_flag = cm_stopped
+			set_country_flag = cm_events_running
 			limit = {
 				ai = no
 			}
@@ -121,17 +123,18 @@ country_event = {
 	}
 	option = {
 		name = "cm_control_events.1.f"
-		set_country_flag = cm_stopped
-		every_country = {
-			limit = {
-				ai = no
-			}
-			save_event_target_as = cm_info_event
-			country_event = {
-				id = cm_control_events.50
-				tooltip = TOOLTIP_CHAOS_MOD_PLAYER_INFO
-			}
-		}
+		clr_country_flag = cm_events_running
+		clr_global_flag = cm_start_event
+		# every_country = {
+		# 	limit = {
+		# 		ai = no
+		# 	}
+		# 	save_event_target_as = cm_info_event
+		# 	country_event = {
+		# 		id = cm_control_events.50
+		# 		tooltip = TOOLTIP_CHAOS_MOD_PLAYER_INFO
+		# 	}
+		# }
 	}
 }
 
@@ -186,11 +189,36 @@ country_event = {
 			}
 		}
 	}
+	option = {
+		name = "cm_control_events.2.g"
+		trigger = {
+			has_global_flag = cm_no_opt_out
+		}
+		clr_global_flag = cm_no_opt_out
+		hidden_effect = {
+			country_event = {
+				id = cm_control_events.2001
+			}
+		}
+	}
+	option = {
+		name = "cm_control_events.2.h"
+		trigger = {
+			NOT = { has_global_flag = cm_no_opt_out }
+		}
+		set_global_flag = cm_no_opt_out
+		hidden_effect = {
+			country_event = {
+				id = cm_control_events.2001
+			}
+		}
+	}
 	option = { # exit
 		name = "cm_control_events.2.x"
 	}
 }
 
+# helper event to restart settings page
 country_event = {
 	id = cm_control_events.2001
 	title = "chaos_mod_event_title"
@@ -403,6 +431,37 @@ country_event = {
 	}
 }
 
+# ask to become controller
+country_event = {
+	id = cm_control_events.20
+	title = "cm_control_events.20.t"
+	desc = "cm_control_events.20.d"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = { # give controller
+		name = "cm_control_events.20.a"
+		remove_country_modifier = cm_controller
+		event_target:cm_becomes_controller = {
+			add_country_modifier = {
+				name = cm_controller
+				duration = -1
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { # no
+		name = "cm_control_events.20.b"
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# info event player turned it off
 country_event = {
 	id = cm_control_events.50
 	title = "cm_control_events.50.t"
@@ -416,6 +475,7 @@ country_event = {
 	}
 }
 
+# info event player tuned it back on
 country_event = {
 	id = cm_control_events.51
 	title = "cm_control_events.51.t"
@@ -429,6 +489,7 @@ country_event = {
 	}
 }
 
+# main chaos loop event
 country_event = {
 	id = cm_control_events.100
 	title = "cm_control_events.100.t"
@@ -443,6 +504,7 @@ country_event = {
 		if = {
 			limit = {
 				has_country_flag = cm_events_running
+				ai = no
 			}
 			if = {
 				limit = {
@@ -484,15 +546,16 @@ country_event = {
 		}
 		else = {
 			set_country_flag = cm_stopped
-			every_country = {
-				limit = {
-					ai = no
-				}
-				save_event_target_as = cm_info_event
-				country_event = {
-					id = cm_control_events.50
-				}
-			}
+			clr_country_flag = cm_events_break_condition
+			# every_country = {
+			# 	limit = {
+			# 		ai = no
+			# 	}
+			# 	save_event_target_as = cm_info_event
+			# 	country_event = {
+			# 		id = cm_control_events.50
+			# 	}
+			# }
 		}
 	}
 
