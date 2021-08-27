@@ -400,7 +400,7 @@ country_event = {
 	}
 }
 
-# take out loans
+# take out cheap loans
 country_event = {
 	id = cm_economy_events.15
 	title = "chaos_mod_event_title"
@@ -412,23 +412,57 @@ country_event = {
 	option = {
 		name = "chaos_mod_event_option_name"
 		add_loan = {
-			interest_modifier = 1
+			fixed_interest = 0
 			duration = 60
 		}
 		add_loan = {
-			interest_modifier = 1
+			fixed_interest = 0
 			duration = 60
 		}
 		add_loan = {
-			interest_modifier = 1
+			fixed_interest = 0
 			duration = 60
 		}
 		add_loan = {
-			interest_modifier = 1
+			fixed_interest = 0
 			duration = 60
 		}
 		add_loan = {
-			interest_modifier = 1
+			fixed_interest = 0
+			duration = 60
+		}
+	}
+}
+
+# take out expensive loans
+country_event = {
+	id = cm_economy_events.16
+	title = "chaos_mod_event_title"
+	desc = "chaos_mod_event_desc"
+	picture = CHAOS_ELMO_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_loan = {
+			fixed_interest = 10
+			duration = 60
+		}
+		add_loan = {
+			fixed_interest = 10
+			duration = 60
+		}
+		add_loan = {
+			fixed_interest = 10
+			duration = 60
+		}
+		add_loan = {
+			fixed_interest = 10
+			duration = 60
+		}
+		add_loan = {
+			fixed_interest = 10
 			duration = 60
 		}
 	}

@@ -16,5 +16,5 @@
  cm_start_events_for_all_desc: "Starts the chaos mod for all players."
  cm_controller: "Chaos Mod Controller"
  desc_cm_controller: "You can edit settings and start/stop the events for all."
- cm_stop_the_next_event: "One the next chaos event it will stop."
+ cm_stop_the_next_event: "After the next chaos event it will stop."
  cm_chaos_cycle_not_finished: "Every country has finished (and thereby reset) its chaos cycle."

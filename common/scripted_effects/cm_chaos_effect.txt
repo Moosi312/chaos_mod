@@ -146,9 +146,15 @@ cm_choas_main_function = {
 			}
 		}
 
-		1 = { # take out loans
+		1 = { # take out cheap loans
 			country_event = {
 				id = cm_economy_events.15
+			}
+		}
+		
+		1 = { # take out expensive loans
+			country_event = {
+				id = cm_economy_events.16
 			}
 		}
 		
@@ -1039,6 +1045,16 @@ cm_choas_main_function = {
 		1 = { # delete everyone
 			country_event = {
 				id = cm_nation_ruin_events.4
+			}
+			modifier = {
+				factor = 0
+				has_global_flag = cm_nation_ruin_events_disabled
+			}
+		}
+
+		1 = { # take out fucking expensive loans
+			country_event = {
+				id = cm_nation_ruin_events.5
 			}
 			modifier = {
 				factor = 0

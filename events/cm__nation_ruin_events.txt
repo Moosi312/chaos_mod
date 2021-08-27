@@ -158,3 +158,57 @@ country_event = {
 		}
 	}
 }
+
+# take out fucking expensive loans
+country_event = {
+	id = cm_nation_ruin_events.5
+	title = "chaos_mod_nation_ruin_event_title"
+	desc = "chaos_mod_nation_ruin_event_desc"
+	picture = CHOAS_NATION_RUIN_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "chaos_mod_event_option_name"
+		add_loan = {
+			fixed_interest = 100
+			duration = 60
+		}
+		add_loan = {
+			fixed_interest = 100
+			duration = 60
+		}
+		add_loan = {
+			fixed_interest = 100
+			duration = 60
+		}
+		add_loan = {
+			fixed_interest = 100
+			duration = 60
+		}
+		add_loan = {
+			fixed_interest = 100
+			duration = 60
+		}
+		add_loan = {
+			fixed_interest = 100
+			duration = 60
+		}
+		add_loan = {
+			fixed_interest = 100
+			duration = 60
+		}
+		add_loan = {
+			fixed_interest = 100
+			duration = 60
+		}
+		add_loan = {
+			fixed_interest = 100
+			duration = 60
+		}
+		add_loan = {
+			fixed_interest = 100
+			duration = 60
+		}
+	}
+}
